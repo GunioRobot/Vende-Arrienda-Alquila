@@ -1,0 +1,74 @@
+/* 
+    Document   : estilo
+    Created on : 14/06/2010, 11:24:35 AM
+    Author     : fabian
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+body {
+    margin:0;
+    padding: 0;
+    font-family: "arial", "sans-serif"}
+.envoltura{
+    width:950px;
+    margin: 0 auto;
+ }
+ .header-envoltura{
+     background: transparent url(../images/bg-header.jpg) no-repeat top left;
+}
+.header-logo-vende{
+    background: transparent url(../images/logo-vende.jpg) no-repeat top left;
+    width:223px;
+    height:126px;
+}
+.header-envoltura-menu-top{
+        background: transparent url(../images/bg-menu-top.png) repeat-x top left;
+        position: absolute;
+        right:12%;
+        top:93px;
+}
+.menu-top{
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 3px;
+}
+.menu-top a{
+   color:#000000;
+
+}
+
+.item-menu-top {
+    float: left;
+    list-style:none;
+    height:24px;
+    width: 130px;
+    text-align: center;
+}
+
+.item-menu-top a:hover {
+    float:left;
+    position:relative;
+    top:-12;
+    padding-top: 15px;
+    vertical-align: middle;
+    background:transparent url(../images/bg-menu-top-item-hover.png) no-repeat top left  ;
+    width: 130px;
+    height: 20px;
+    
+}
+.barra-header{
+    background: transparent url(../images/bg-menu-top.png) repeat-x top left;
+    position: relative;
+    top:-33px;
+    width:523px;
+    height: 36px;
+}
+a {
+    text-decoration: none;
+}

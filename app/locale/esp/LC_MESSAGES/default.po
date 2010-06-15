@@ -1,0 +1,793 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from file: Revision: 6296 /app/views/layouts/default.ctp
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2009-10-04 15:01-0500\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: /controllers/components/authake.php:53
+msgid "Your session expired"
+msgstr "Su sesion ha expirado"
+
+#: /controllers/components/authake.php:69
+msgid "You have to log in to access "
+msgstr "Tiene que identificarse para tener acceso a esta area"
+
+#: /controllers/components/authake.php:104
+#: /plugins/authake/views/helpers/authak3.php:46
+#: /plugins/authake/views/user/index.ctp:18
+#: /plugins/authake/views/users/index.ctp:59
+msgid "Guest"
+msgstr "Invitado"
+
+#: /plugins/authake/authake_app_controller.php:28
+#: /plugins/authake/controllers/user_controller.php:50
+msgid "The two passwords do not match!"
+msgstr "Las contraseñas no coinciden"
+
+#: /plugins/authake/controllers/groups_controller.php:44
+msgid "Invalid group."
+msgstr "Grupo Invalido."
+
+#: /plugins/authake/controllers/groups_controller.php:59;82
+msgid "The group has been saved"
+msgstr "El grupo fue guardado correctamente"
+
+#: /plugins/authake/controllers/groups_controller.php:62
+msgid "The group could not be saved. Please, try again"
+msgstr "El grupo no se pudo guardar. Por favor intente de nuevo"
+
+#: /plugins/authake/controllers/groups_controller.php:71
+msgid "Invalid group"
+msgstr "Grupo Invalido"
+
+#: /plugins/authake/controllers/groups_controller.php:76
+msgid "You cannot edit the group administrators"
+msgstr "Usted no puede editar el grupo Administrators"
+
+#: /plugins/authake/controllers/groups_controller.php:84
+msgid "The group could not be saved. Please, try again."
+msgstr "El grupo no se pudo guardar. Por favor intente de nuevo."
+
+#: /plugins/authake/controllers/groups_controller.php:106
+msgid "Impossible to delete this group"
+msgstr "Es imposible borrar este grupo"
+
+#: /plugins/authake/controllers/groups_controller.php:110
+msgid "Group deleted"
+msgstr "Grupo Borrado!"
+
+#: /plugins/authake/controllers/rules_controller.php:37
+msgid "Invalid Rule."
+msgstr "Regla Invalida."
+
+#: /plugins/authake/controllers/rules_controller.php:48;74
+msgid "The Rule has been saved"
+msgstr "La regala fue grabada correctamente"
+
+#: /plugins/authake/controllers/rules_controller.php:51;77
+msgid "The Rule could not be saved. Please, try again."
+msgstr "La Regla no se pudo guardar. Por favor intente de nuevo."
+
+#: /plugins/authake/controllers/rules_controller.php:65
+msgid "Invalid Rule"
+msgstr "Regla Invalida"
+
+#: /plugins/authake/controllers/rules_controller.php:69
+msgid "Impossible to edit this rule!"
+msgstr "Es imposible editar esta regla!"
+
+#: /plugins/authake/controllers/rules_controller.php:95
+msgid "Invalid id for Rule"
+msgstr "ID invalido para la regla"
+
+#: /plugins/authake/controllers/rules_controller.php:98
+msgid "Impossible to delete this rule!"
+msgstr "Imposible borrar este regla!"
+
+#: /plugins/authake/controllers/rules_controller.php:101
+msgid "Rule deleted"
+msgstr "Regla Borrada!"
+
+#: /plugins/authake/controllers/user_controller.php:40
+#: /plugins/authake/controllers/users_controller.php:47;87
+msgid "Invalid User"
+msgstr "Usuario Invalido"
+
+#: /plugins/authake/controllers/user_controller.php:53
+msgid "Password changed!"
+msgstr "Contraseña Cambiada!"
+
+#: /plugins/authake/controllers/user_controller.php:60
+msgid "Email changed but need to be confirmed!"
+msgstr "Correo actualizado, pero necesita ser confirmado!"
+
+#: /plugins/authake/controllers/user_controller.php:78
+msgid "This login is already used!"
+msgstr "Este usuario actualmente esta en uso!"
+
+#: /plugins/authake/controllers/user_controller.php:84
+msgid "This email is already registred!"
+msgstr "Este correo ya fue registrado!"
+
+#: /plugins/authake/controllers/user_controller.php:106
+msgid "You will receive an email with a code in order to finish the registration..."
+msgstr "Recibiras un correo con un codigo para finalizar el preoceso de registro..."
+
+#: /plugins/authake/controllers/user_controller.php:108
+msgid "Failed to send the confirmation email. Please contact the administrator at xxx@xxx"
+msgstr "No pudimos enviar el correo de confirmacion. Por favor Informe al administrador"
+
+#: /plugins/authake/controllers/user_controller.php:112
+msgid "The registration failed!"
+msgstr "El proceso de registro Fallo!"
+
+#: /plugins/authake/controllers/user_controller.php:126
+msgid "The email and/or registration code is invalid..."
+msgstr "El correo y/o el codigo de registro es invalido..."
+
+#: /plugins/authake/controllers/user_controller.php:131
+msgid "Your registration is confirmed!"
+msgstr "Su registro ha sido confirmado!"
+
+#: /plugins/authake/controllers/user_controller.php:142
+msgid "You are already logged in!"
+msgstr "Ahora esta identificado en el sistema!"
+
+#: /plugins/authake/controllers/user_controller.php:153;179
+msgid "Invalid login or password!"
+msgstr "Nombre de usuario o contraseña invalida!"
+
+#: /plugins/authake/controllers/user_controller.php:159
+msgid "Your account is disabled!"
+msgstr "Su cuenta fue desactivada!"
+
+#: /plugins/authake/controllers/user_controller.php:166
+msgid "Your account has expired!"
+msgstr "Su cuenta expiro!"
+
+#: /plugins/authake/controllers/user_controller.php:172
+msgid "You registration has not been confirmed!"
+msgstr "Su registro no ha sido confirmado!"
+
+#: /plugins/authake/controllers/user_controller.php:184
+msgid "You are logged in as "
+msgstr "Identificado como "
+
+#: /plugins/authake/controllers/user_controller.php:217;225
+msgid "If data provided is correct, you should receive a mail with instructions to change your password..."
+msgstr "Si la información es correcta, usted recibirá un correo con instrucciones para cambiar su contraseña..."
+
+#: /plugins/authake/controllers/user_controller.php:219
+msgid "Failed to send a email to change your password. Please contact the administrator at xxx@xxx"
+msgstr "No pudimos enviar el correo para cambiar su clave. Por favor Informe al administrador"
+
+#: /plugins/authake/controllers/user_controller.php:222
+msgid "Failed to change your password. Please contact the administrator at xxx@xxx"
+msgstr "No pudimos cambiar su contraseña. Por favor Informe al administrador"
+
+#: /plugins/authake/controllers/user_controller.php:239
+msgid "Bad identification data!"
+msgstr "Informacion de Identificacion errada!"
+
+#: /plugins/authake/controllers/user_controller.php:245
+msgid "Your password is changed. Log in now!"
+msgstr "Su contraseña se cambio. Ahora entre al sistema!"
+
+#: /plugins/authake/controllers/user_controller.php:259
+msgid "You are logged out!"
+msgstr "Cerro su sesion con exito!"
+
+#: /plugins/authake/controllers/users_controller.php:64;110
+msgid "You cannot add a user in administrators group"
+msgstr "Usted no puede agregar un usario al grupo Adminstrador"
+
+#: /plugins/authake/controllers/users_controller.php:73;127
+msgid "The User has been saved"
+msgstr "El Usuario fue guardado"
+
+#: /plugins/authake/controllers/users_controller.php:76;129
+msgid "The User could not be saved. Please, try again."
+msgstr "El Usuario no se pudo guardar. Por favor, intente de nuevo"
+
+#: /plugins/authake/controllers/users_controller.php:97
+msgid "You cannot edit a user in administrators group"
+msgstr "Usted no puede editar un usuario en el grupo Administrador"
+
+#: /plugins/authake/controllers/users_controller.php:104
+msgid "Only the admin can change its profile!"
+msgstr "Solmanete el administrador puede cambiar este perfil!"
+
+#: /plugins/authake/controllers/users_controller.php:149
+msgid "Invalid id for User"
+msgstr "ID Invalido para Usuario"
+
+#: /plugins/authake/controllers/users_controller.php:157
+msgid "You cannot delete a user in administrators group"
+msgstr "Usted no puede borrar un usuario en el grupo Administrador"
+
+#: /plugins/authake/controllers/users_controller.php:162
+msgid "User deleted"
+msgstr "Usuario Borrado!"
+
+#: /plugins/authake/views/authake/index.ctp:4
+msgid "Logout"
+msgstr "Cerrar Sesion"
+
+#: /plugins/authake/views/authake/index.ctp:8
+msgid "Authake administration page"
+msgstr "Centro de Adminsitracion de Usuarios"
+
+#: /plugins/authake/views/authake/index.ctp:12
+#: /plugins/authake/views/groups/index.ctp:65
+#: /plugins/authake/views/groups/view.ctp:84
+#: /plugins/authake/views/users/add.ctp:4
+#: /plugins/authake/views/users/edit.ctp:4
+#: /plugins/authake/views/users/view.ctp:4
+msgid "Manage users"
+msgstr "Adminstracion de Usuarios"
+
+#: /plugins/authake/views/authake/index.ctp:13
+#: /plugins/authake/views/groups/add.ctp:4
+#: /plugins/authake/views/groups/edit.ctp:4
+#: /plugins/authake/views/groups/view.ctp:4
+#: /plugins/authake/views/users/index.ctp:108
+msgid "Manage groups"
+msgstr "Administracion de Grupos"
+
+#: /plugins/authake/views/authake/index.ctp:14
+#: /plugins/authake/views/groups/index.ctp:66
+#: /plugins/authake/views/groups/view.ctp:47;138
+#: /plugins/authake/views/rules/add.ctp:4
+#: /plugins/authake/views/rules/edit.ctp:4
+#: /plugins/authake/views/rules/view.ctp:4
+#: /plugins/authake/views/users/index.ctp:109
+#: /plugins/authake/views/users/view.ctp:130;179
+msgid "Manage rules"
+msgstr "Administracion de Reglas"
+
+#: /plugins/authake/views/authake/index.ctp:18
+#: /plugins/authake/views/users/index.ctp:5
+msgid "Users"
+msgstr "Usuarios"
+
+#: /plugins/authake/views/authake/index.ctp:22
+msgid "New user"
+msgstr "Agregar Usuario"
+
+#: /plugins/authake/views/authake/index.ctp:26
+#: /plugins/authake/views/groups/index.ctp:6
+#: /plugins/authake/views/user/index.ctp:11
+msgid "Groups"
+msgstr "Grupos"
+
+#: /plugins/authake/views/authake/index.ctp:30
+#: /plugins/authake/views/groups/index.ctp:9
+msgid "New group"
+msgstr "Agregar Grupo"
+
+#: /plugins/authake/views/authake/index.ctp:34
+#: /plugins/authake/views/rules/index.ctp:6
+msgid "Rules"
+msgstr "Reglas"
+
+#: /plugins/authake/views/authake/index.ctp:38
+#: /plugins/authake/views/groups/view.ctp:137
+msgid "New rule"
+msgstr "Nueva Regla"
+
+#: /plugins/authake/views/elements/gotoadminpage.ctp:3
+msgid "Admin page"
+msgstr "Pagina de Administracion"
+
+#: /plugins/authake/views/elements/gotohomepage.ctp:3
+msgid "Homepage"
+msgstr "Pagina Inicial"
+
+#: /plugins/authake/views/groups/add.ctp:10
+msgid "Create a new group"
+msgstr "Crear un nuevo grupo"
+
+#: /plugins/authake/views/groups/add.ctp:12
+#: /plugins/authake/views/groups/edit.ctp:13
+msgid "Name"
+msgstr "Nombre"
+
+#: /plugins/authake/views/groups/add.ctp:13
+#: /plugins/authake/views/groups/edit.ctp:14
+msgid "Users in this group<br/>Press 'Control' for multi-selection"
+msgstr "Usuarios en eeste grupo<br />Presion 'Control' para seleccion multiple"
+
+#: /plugins/authake/views/groups/add.ctp:16
+#: /plugins/authake/views/users/add.ctp:21
+msgid "Create"
+msgstr "Crear"
+
+#: /plugins/authake/views/groups/edit.ctp:10
+msgid "Modify group"
+msgstr "Modificar Grupo"
+
+#: /plugins/authake/views/groups/edit.ctp:17
+#: /plugins/authake/views/user/index.ctp:32
+#: /plugins/authake/views/users/edit.ctp:25
+msgid "Modify"
+msgstr "Modificar"
+
+#: /plugins/authake/views/groups/edit.ctp:21
+#: /plugins/authake/views/groups/view.ctp:13
+msgid "View group"
+msgstr "Ver Grupo"
+
+#: /plugins/authake/views/groups/edit.ctp:22
+#: /plugins/authake/views/groups/index.ctp:40
+#: /plugins/authake/views/rules/edit.ctp:27
+#: /plugins/authake/views/rules/index.ctp:61
+#: /plugins/authake/views/users/edit.ctp:31
+#: /plugins/authake/views/users/index.ctp:94
+msgid "Delete"
+msgstr "Borrar"
+
+#: /plugins/authake/views/groups/edit.ctp:22
+#: /plugins/authake/views/rules/edit.ctp:27
+#: /plugins/authake/views/rules/view.ctp:71
+#: /plugins/authake/views/users/edit.ctp:31
+msgid "Are you sure you want to delete # %s?"
+msgstr "Esta Seguro que quiere borrar # %s?"
+
+#: /plugins/authake/views/groups/index.ctp:16
+msgid "There are %current% groups on this system."
+msgstr "Existen %current% grupos en el sistema."
+
+#: /plugins/authake/views/groups/index.ctp:22
+#: /plugins/authake/views/groups/view.ctp:60;102
+#: /plugins/authake/views/rules/index.ctp:19
+#: /plugins/authake/views/users/index.ctp:28
+#: /plugins/authake/views/users/view.ctp:145
+msgid "Actions"
+msgstr "Acciones"
+
+#: /plugins/authake/views/groups/index.ctp:38
+#: /plugins/authake/views/groups/view.ctp:74;125
+#: /plugins/authake/views/rules/index.ctp:59
+#: /plugins/authake/views/users/index.ctp:92
+#: /plugins/authake/views/users/view.ctp:168
+msgid "View"
+msgstr "Ver"
+
+#: /plugins/authake/views/groups/index.ctp:39
+#: /plugins/authake/views/groups/view.ctp:75;126
+#: /plugins/authake/views/rules/index.ctp:60
+#: /plugins/authake/views/users/index.ctp:93
+#: /plugins/authake/views/users/view.ctp:169
+msgid "Edit"
+msgstr "Editar"
+
+#: /plugins/authake/views/groups/index.ctp:40
+msgid "Are you sure you want to delete the group '%s'?"
+msgstr "Esta seguro que desea borrar el grupo '%s'?"
+
+#: /plugins/authake/views/groups/index.ctp:54
+msgid "Everybody (all users, logged or not, are in this group)"
+msgstr ""
+
+#: /plugins/authake/views/groups/view.ctp:8
+msgid "Group %s"
+msgstr "Grupo %s"
+
+#: /plugins/authake/views/groups/view.ctp:15
+msgid "Edit group"
+msgstr "Editar Grupo"
+
+#: /plugins/authake/views/groups/view.ctp:17
+#: /plugins/authake/views/users/view.ctp:100
+msgid "View allowed & denied actions"
+msgstr "Ver Acciones permitidas y no permitidas"
+
+#: /plugins/authake/views/groups/view.ctp:18
+msgid "Delete group"
+msgstr "Borrar Grupo"
+
+#: /plugins/authake/views/groups/view.ctp:18
+msgid "Are you sure you want to delete the group %s?"
+msgstr "Esta seguro que desea borrar el grupo %s?"
+
+#: /plugins/authake/views/groups/view.ctp:26
+#: /plugins/authake/views/users/view.ctp:109
+msgid "Allowed & denied actions"
+msgstr "Acciones permitidas y no permitidas"
+
+#: /plugins/authake/views/groups/view.ctp:48
+#: /plugins/authake/views/users/view.ctp:131
+msgid "Hide this view"
+msgstr "Ocultar esta vista"
+
+#: /plugins/authake/views/groups/view.ctp:54
+msgid "Users in group %s"
+msgstr "Usuarios que pertenecen al grupo %s"
+
+#: /plugins/authake/views/user/login.ctp:6;12
+msgid "Login"
+msgstr "Entrar Al Sistema"
+
+#: /plugins/authake/views/groups/view.ctp:59
+#: /plugins/authake/views/user/register.ctp:10
+#: /plugins/authake/views/users/add.ctp:14
+#: /plugins/authake/views/users/edit.ctp:14
+#: /plugins/authake/views/users/view.ctp:47
+msgid "Email"
+msgstr "Correo Electronico"
+
+#: /plugins/authake/views/groups/view.ctp:94
+msgid "Rules applied to the group %s"
+msgstr "Reglas para el grupo %s"
+
+#: /plugins/authake/views/groups/view.ctp:96
+#: /plugins/authake/views/users/view.ctp:139
+msgid "Rules herited from guest group are greyed"
+msgstr "Reglas heredadas aparecen en gris"
+
+#: /plugins/authake/views/groups/view.ctp:99
+#: /plugins/authake/views/rules/add.ctp:12
+#: /plugins/authake/views/rules/edit.ctp:13
+#: /plugins/authake/views/rules/index.ctp:15
+#: /plugins/authake/views/rules/view.ctp:10
+#: /plugins/authake/views/users/view.ctp:142
+msgid "Description"
+msgstr "Descripcion"
+
+#: /plugins/authake/views/groups/view.ctp:101
+#: /plugins/authake/views/rules/index.ctp:18
+#: /plugins/authake/views/rules/view.ctp:30
+#: /plugins/authake/views/users/view.ctp:144
+msgid "Action"
+msgstr "Accion"
+
+#: /plugins/authake/views/helpers/htmlbis.php:35
+msgid "Allow"
+msgstr "Permitir"
+
+#: /plugins/authake/views/helpers/htmlbis.php:37
+msgid "Deny"
+msgstr "Denegar"
+
+#: /plugins/authake/views/rules/add.ctp:10
+msgid "Add Rule"
+msgstr "Agregar Regla"
+
+#: /plugins/authake/views/rules/add.ctp:13
+#: /plugins/authake/views/rules/edit.ctp:14
+msgid "Groupe"
+msgstr "Grupo"
+
+#: /plugins/authake/views/rules/add.ctp:14
+#: /plugins/authake/views/rules/index.ctp:20
+#: /plugins/authake/views/rules/view.ctp:25
+msgid "Order"
+msgstr "Ordenar"
+
+#: /plugins/authake/views/rules/add.ctp:15
+#: /plugins/authake/views/rules/edit.ctp:16
+msgid "Action<br/>(perl regex)"
+msgstr "Accion<br />(expresion regular de perl)"
+
+#: /plugins/authake/views/rules/add.ctp:16
+#: /plugins/authake/views/rules/edit.ctp:17
+#: /plugins/authake/views/rules/view.ctp:37
+msgid "Permission"
+msgstr "Permisos"
+
+#: /plugins/authake/views/rules/add.ctp:17
+#: /plugins/authake/views/rules/view.ctp:44
+msgid "Forward action on deny"
+msgstr "Redireccionar cuando no permita"
+
+#: /plugins/authake/views/rules/add.ctp:18
+#: /plugins/authake/views/rules/edit.ctp:19
+#: /plugins/authake/views/rules/view.ctp:55
+msgid "Flash message on deny"
+msgstr "Mensaje cuando no permita"
+
+#: /plugins/authake/views/rules/edit.ctp:10
+msgid "Modify rule"
+msgstr "Cambiar Regla"
+
+#: /plugins/authake/views/rules/edit.ctp:15
+msgid "Ordre"
+msgstr "Ordenar"
+
+#: /plugins/authake/views/rules/edit.ctp:18
+msgid "Forward action on error"
+msgstr "Redireccionar en error"
+
+#: /plugins/authake/views/rules/edit.ctp:26
+msgid "View rule"
+msgstr "Ver Regla"
+
+#: /plugins/authake/views/rules/index.ctp:9
+#: /plugins/authake/views/users/view.ctp:178
+msgid "New Rule"
+msgstr "Nueva regla"
+
+#: /plugins/authake/views/rules/index.ctp:16
+#: /plugins/authake/views/rules/view.ctp:15
+msgid "Group"
+msgstr "Grupo"
+
+#: /plugins/authake/views/rules/index.ctp:61
+msgid "Are you sure you want to delete the rule \"%s\"?"
+msgstr "Esta seguro que desea borrar la regla \"%s\"?"
+
+#: /plugins/authake/views/rules/index.ctp:65
+msgid "Move up"
+msgstr "Mover Arriba"
+
+#: /plugins/authake/views/rules/index.ctp:73
+msgid "Move down"
+msgstr "Mover Abajo"
+
+#: /plugins/authake/views/rules/index.ctp:92
+msgid "Manage Users"
+msgstr "Administracion de Usuarios"
+
+#: /plugins/authake/views/rules/index.ctp:93
+msgid "Manage Groups"
+msgstr "Administracion de Grupos"
+
+#: /plugins/authake/views/rules/view.ctp:8
+msgid "Rule"
+msgstr "Regla"
+
+#: /plugins/authake/views/rules/view.ctp:20
+msgid "Everybody, including not logged users"
+msgstr "Todo el mundo, incluido los usuarios no identificados"
+
+#: /plugins/authake/views/rules/view.ctp:51
+msgid "Forward to the login page, or default deny action if logged"
+msgstr "Redireccionar a la pagina de identificacion, o por omision no permita la accion si esta identificado"
+
+#: /plugins/authake/views/rules/view.ctp:62
+msgid "No output"
+msgstr ""
+
+#: /plugins/authake/views/rules/view.ctp:70
+msgid "Edit Rule"
+msgstr "Editar Regla"
+
+#: /plugins/authake/views/rules/view.ctp:71
+msgid "Delete Rule"
+msgstr "Borrar Regla"
+
+#: /plugins/authake/views/user/changemypassword.ctp:11
+msgid "Change my password now"
+msgstr "Cambiar mi contraseña ahora"
+
+#: /plugins/authake/views/user/confirmregister.ctp:6
+msgid "Confirm registration"
+msgstr "Confirmar Registro"
+
+#: /plugins/authake/views/user/confirmregister.ctp:12
+msgid "Confirm"
+msgstr "Confirmar"
+
+#: /plugins/authake/views/user/denied.ctp:6
+msgid "Go to homepage"
+msgstr "Ir a la pagina inicial"
+
+#: /plugins/authake/views/user/index.ctp:4
+msgid "Profile of "
+msgstr "Perfil de "
+
+#: /plugins/authake/views/user/index.ctp:23
+msgid "Created"
+msgstr "Creado en"
+
+#: /plugins/authake/views/user/index.ctp:39
+msgid "Save"
+msgstr "Guardar"
+
+#: /plugins/authake/views/user/login.ctp:9
+#: /plugins/authake/views/user/register.ctp:11
+#: /plugins/authake/views/users/add.ctp:13
+msgid "Password"
+msgstr "Contraseña"
+
+#: /plugins/authake/views/user/login.ctp:13
+msgid "I forgot my password..."
+msgstr "Olvide mi contraseña..."
+
+#: /plugins/authake/views/user/mypassword.ctp:6
+msgid "Login or email"
+msgstr "Nombre de usuario o correo"
+
+#: /plugins/authake/views/user/mypassword.ctp:8
+msgid "Request for password"
+msgstr "Peticion por contraseña"
+
+#: /plugins/authake/views/user/register.ctp:6
+msgid "Registration"
+msgstr "Registro"
+
+#: /plugins/authake/views/user/register.ctp:12
+msgid "Please, re-enter password"
+msgstr "Por favor, repita la contraseña"
+
+#: /plugins/authake/views/user/register.ctp:14
+msgid "Register"
+msgstr "Registrarse"
+
+#: /plugins/authake/views/users/add.ctp:10
+msgid "Create a new user"
+msgstr "Crear un nuevo usuario"
+
+#: /plugins/authake/views/users/add.ctp:15
+#: /plugins/authake/views/users/edit.ctp:13
+msgid "In groups<br/>Press 'Control' for multi-selection"
+msgstr "En grupos<br />Presione 'Control' para multi seleccion"
+
+#: /plugins/authake/views/users/add.ctp:16
+#: /plugins/authake/views/users/edit.ctp:19
+msgid "Disable account"
+msgstr "Desactivar Cuenta"
+
+#: /plugins/authake/views/users/edit.ctp:10
+msgid "Modify user"
+msgstr "Modificar Usuario"
+
+#: /plugins/authake/views/users/edit.ctp:15
+#: /plugins/authake/views/users/view.ctp:52
+msgid "Email check code"
+msgstr "Codigo para verificar correo"
+
+#: /plugins/authake/views/users/edit.ctp:16
+#: /plugins/authake/views/users/view.ctp:59
+msgid "Password change code"
+msgstr "Codifo para cambiar contraseña"
+
+#: /plugins/authake/views/users/edit.ctp:17
+msgid "New password (visible!)"
+msgstr "Contraseña Nueva (OJO es VISIBLE!)"
+
+#: /plugins/authake/views/users/edit.ctp:22
+msgid "Account expiry date"
+msgstr "Fecha de expiracion de la cuenta"
+
+#: /plugins/authake/views/users/edit.ctp:30
+#: /plugins/authake/views/users/view.ctp:96
+msgid "View user"
+msgstr "Ver Usuario"
+
+#: /plugins/authake/views/users/index.ctp:8
+msgid "New User"
+msgstr "Nuevo Usuario"
+
+#: /plugins/authake/views/users/index.ctp:15
+msgid "There are %current% users on this system. Page %page%/%pages%"
+msgstr "Hay %current% usuarios en el sistema. Pagina %page% de %pages%"
+
+#: /plugins/authake/views/users/index.ctp:27
+msgid "Disabled"
+msgstr "Disactivado"
+
+#: /plugins/authake/views/users/index.ctp:68
+msgid "Needed"
+msgstr "Necesario"
+
+#: /plugins/authake/views/users/index.ctp:75
+msgid "Requested"
+msgstr ""
+
+#: /plugins/authake/views/users/index.ctp:83
+#: /plugins/authake/views/users/view.ctp:15
+msgid "Account disabled"
+msgstr "Cuenta Desactivada"
+
+#: /plugins/authake/views/users/index.ctp:86
+msgid "Account expired"
+msgstr "Cuenta Expirada"
+
+#: /plugins/authake/views/users/index.ctp:94
+#: /plugins/authake/views/users/view.ctp:101
+msgid "Are you sure you want to delete user '%s'?"
+msgstr "Esta segurio que desea borrar el ususario '%s'?"
+
+#: /plugins/authake/views/users/index.ctp:101
+msgid "previous"
+msgstr "anterior"
+
+#: /plugins/authake/views/users/index.ctp:103
+msgid "next"
+msgstr "siguiente"
+
+#: /plugins/authake/views/users/view.ctp:8
+msgid "User %s"
+msgstr "Usuario %s"
+
+#: /plugins/authake/views/users/view.ctp:12
+msgid "Warning"
+msgstr "Atención!"
+
+#: /plugins/authake/views/users/view.ctp:26
+msgid "In groups"
+msgstr "En Grupos"
+
+#: /plugins/authake/views/users/view.ctp:40
+msgid "No group"
+msgstr "Sin Grupo"
+
+#: /plugins/authake/views/users/view.ctp:55
+msgid "No email change requested"
+msgstr ""
+
+#: /plugins/authake/views/users/view.ctp:62
+msgid "No password change requested"
+msgstr ""
+
+#: /plugins/authake/views/users/view.ctp:66
+msgid "Account expires on"
+msgstr "La cuenta expira en"
+
+#: /plugins/authake/views/users/view.ctp:73
+msgid "Never"
+msgstr "Nunca"
+
+#: /plugins/authake/views/users/view.ctp:77
+msgid "Created on"
+msgstr "Creada en"
+
+#: /plugins/authake/views/users/view.ctp:82
+msgid "Updated on"
+msgstr "Actualizada en"
+
+#: /plugins/authake/views/users/view.ctp:98
+msgid "Edit user"
+msgstr "Editar Usuario"
+
+#: /plugins/authake/views/users/view.ctp:101
+msgid "Delete user"
+msgstr "Borrar usuario"
+
+#: /plugins/authake/views/users/view.ctp:137
+msgid "Rules applied to user %s"
+msgstr "Reglas para el ususario %s"
+
+#: /views/layouts/default.ctp:31
+msgid "CakePHP: the rapid development php framework:"
+msgstr "VendeNET: EL sitio para publicar inmuebles"
+
+#: /views/layouts/default.ctp:48;62
+msgid "CakePHP: the rapid development php framework"
+msgstr "VendeNET: EL sitio para publicar inmuebles"
+
+#: /webroot/test.php:98
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+
+#: /plugins/authake/views/user/login.ctp:8
+#: /plugins/authake/views/user/index.ctp:6
+#: /plugins/authake/views/users/index.ctp:21
+#: /plugins/authake/views/groups/view.ctp:58
+#: /plugins/authake/views/user/register.ctp:9
+#: /plugins/authake/views/users/add.ctp:12
+#: /plugins/authake/views/users/view.ctp:21
+msgid "Username"
+msgstr "Nombre de Usuario"
+
+
+msgid "New Status"
+msgstr "Nuevo Estado"
+
+msgid "The Pais has been saved"
+msgstr "El Pais fue guardado correctamente"
+
+msgid "The Departamento has been saved"
+msgstr "El Departamento fue borrado con Exito"
