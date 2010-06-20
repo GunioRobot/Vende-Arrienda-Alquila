@@ -1,1 +1,6 @@
 app/tmp/*
+.htaccess.swp
+._.htaccess
+._htaccess
+.htaccess
+nbproject/*
