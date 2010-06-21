@@ -7,8 +7,11 @@
 <div class ="header-envoltura">
   <div class="menu-superior">
       <ul class="menu-superior-lista">
-          <li class="item-menu-superior"><a href="#"><span>Inicio</span></a></li>
-          <li class="item-menu-superior"><a href="#"><span>Ingresar</span></a></li>
+          <?php
+          echo $html->tag('li', $html->link('Inicio', '/'), array('class' => 'item-menu-superior'));
+          echo $html->tag('li', $html->link('Ingresar', '/authake/user/login'), array('class' => 'item-menu-superior'));
+          echo $html->tag('li', $html->link('Registrarse', '/authake/user/register'), array('class' => 'item-menu-superior'));
+          ?>
       </ul>
   </div>
   <div class="header-logo">
