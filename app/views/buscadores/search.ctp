@@ -1,10 +1,12 @@
 <?php 
 //var_dump($paginado);
 ///echo $paginator->sort('ID', 'id');
+/**
 echo $paginator->numbers();
 echo $paginator->prev('« Anterior ', null, null, array('class' => 'disabled'));
 echo $paginator->next(' Siguiente »', null, null, array('class' => 'disabled'));
 echo $paginator->counter(array('separator' => ' de '));
+ */
 ?>
 <hr>
 <table>

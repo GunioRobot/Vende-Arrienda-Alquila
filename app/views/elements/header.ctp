@@ -10,7 +10,6 @@
           <?php
           echo $html->tag('li', $html->link('Inicio', '/'), array('class' => 'item-menu-superior'));
           echo $html->tag('li', $html->link('Ingresar', '/authake/user/login'), array('class' => 'item-menu-superior'));
-          echo $html->tag('li', $html->link('Registrarse', '/authake/user/register'), array('class' => 'item-menu-superior'));
           ?>
       </ul>
   </div>
@@ -24,7 +23,7 @@
           <li class="item-menu-top"><a href="#"><span>Nosotros</span></a></li>
           <li class="item-menu-top"><a href="#"><span>Contactenos</span></a></li>
           <li class="item-menu-top"><a href="#"><span>Tarifas</span></a></li>
-          <li class="item-menu-top"><a href="#"><span>Registrarse</span></a></li>
+          <?php echo $html->tag('li', $html->link('Registrarse', '/authake/user/register'), array('class' => 'item-menu-top')); ?>
       </ul>
   </div>
   <div class="barra-header"></div>

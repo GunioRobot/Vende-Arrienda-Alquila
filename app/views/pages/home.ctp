@@ -1,12 +1,19 @@
+<?php
+echo $javascript->link('buscador')."\n";
+?>
+
 <div class="contenido-envoltura">
   <div class="contenido-left">
   <div class="busqueda-envoltura">
-      <label class="busqueda-titulo">Busca tu inmueble por código</label><input type="text" class="input-busqueda" />
+  <?php echo $form->create('Buscador', array('action' => 'search')); ?>
+      <label class="busqueda-titulo">Busca tu inmueble por código</label>
+      <input type="text" name="data[Buscador][qcode]" class="input-busqueda" />
       <div class="envoltura-caja-contenido-busqueda">
       <div class="boton-enviar">
                   <button class="enviar" name="enviar">Buscar</button>
       </div>
       </div>
+  </form>
   </div>
   <div class="envoltura-busqueda-detallada">
       <div class="envoltura-caja-header">
@@ -111,34 +118,6 @@
   </div>
 </div>
 
-<?php
-echo $javascript->link('buscador')."\n";
-?>
-<h2>Bienvenido al Sistema Vende.net</h2>
-
-<div id="banners">
-<?php
-echo $html->image('vendelog.gif', array(
-        'alt' => 'Vende.NET', 
-        'url' => array('controller' => 'vendenet')));
-
-echo $html->image('alquila.gif', array(
-        'alt' => 'Alquila.NET', 
-        'url' => array('controller' => 'alquilanet')));
-
-echo $html->image('arrienda.gif', array(
-        'alt' => 'Arrienda.NET', 
-        'url' => array('controller' => 'arriendanet')));
-?>
-</div>
-
-<?php echo $form->create('Buscador', array('action' => 'search')); ?>
-
-<div id="box" style="width:450px;">
-Busqueda por Codigo 
-<input id="BuscadorQcode" type="text" value="" name="data[Buscador][qcode]" />
-<input type="submit" value="Buscar!" />
-</div>
 
 <div id="box" style="width:350px;">
 Busqueda Detallada
