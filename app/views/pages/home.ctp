@@ -1,3 +1,116 @@
+<div class="contenido-envoltura">
+  <div class="contenido-left">
+  <div class="busqueda-envoltura">
+      <label class="busqueda-titulo">Busca tu inmueble por código</label><input type="text" class="input-busqueda" />
+      <div class="envoltura-caja-contenido-busqueda">
+      <div class="boton-enviar">
+                  <button class="enviar" name="enviar">Buscar</button>
+      </div>
+      </div>
+  </div>
+  <div class="envoltura-busqueda-detallada">
+      <div class="envoltura-caja-header">
+        <h1 class="caja-titulo">Busqueda Detallada</h1>
+      </div>
+      <div class="envoltura-caja-contenido">
+          <p></p>
+          <form class="formulario" name="busqueda-detallada">
+          <div class="busqueda-detallada-bloque">
+          <div class="negocio-titulo">Tipo de negocio</div>
+          <select class="opciones-tipo-negocio">
+              <option class="opcion-tipo-negocio">opcion1</option>
+              <option class="opcion-tipo-negocio">opcion2</option>
+              <option class="opcion-tipo-negocio">opcion3</option>
+          </select>
+          </div>
+          <div class="busqueda-detallada-bloque">
+          <div class="negocio-titulo">Subcategorias</div>
+          <select class="opciones-tipo-negocio">
+              <option class="opcion-tipo-negocio">opcion1</option>
+              <option class="opcion-tipo-negocio">opcion2</option>
+              <option class="opcion-tipo-negocio">opcion3</option>
+          </select>
+          </div>
+          <div class="busqueda-detallada-bloque">
+          <div class="negocio-titulo">Ciudad</div>
+          <select class="opciones-tipo-negocio">
+              <option class="opcion-tipo-negocio">opcion1</option>
+              <option class="opcion-tipo-negocio">opcion2</option>
+              <option class="opcion-tipo-negocio">opcion3</option>
+          </select>
+          </div>
+              <div class="boton-enviar">
+                  <button class="enviar" name="enviar">Buscar</button>
+              </div>
+          </form>
+      </div>
+  </div>
+         <div class="busqueda-envoltura">
+
+      <div class="banner-todos">
+
+      </div>
+  </div>
+  </div>
+  <div class="contenido-right">
+  <div class="envoltura-caja">
+      <div class="envoltura-caja-header">
+        <h1 class="caja-titulo">Bienvenido</h1>
+      </div>
+      <div class="envoltura-caja-contenido">
+      <p class="caja-contenido">Publica fácilmente el inmueble que quieras vender arrendar o alquilar</p>
+      <p class="caja-contenido">Experimenta una nueva alternativa para encontrar vivienda</p>
+      <p class="caja-contenido">Registrate gratis y comienza a usar los beneficios de esta innovadora herramienta</p>
+      </div>
+  </div>
+      <div class="envoltura-caja">
+      <div class="envoltura-caja-header">
+        <h1 class="caja-titulo">Últimas Noticias</h1>
+      </div>
+      <div class="envoltura-caja-contenido">
+      <ul class="lista-noticias">
+          <li class="item-noticia"><a href="#">Noticia 1...</a></li>
+          <li class="item-noticia"><a href="#">Noticia 2...</a></li>
+          <li class="item-noticia"><a href="#">Noticia 3...</a></li>
+      </ul>
+      </div>
+  </div>
+      <div class="envoltura-caja">
+
+            <div class="envoltura-caja-header">
+            <h1 class="caja-titulo">Siguenos</h1>
+            </div>
+            <div class="envoltura-caja-contenido">
+                <div class="envoltura-redes-sociales-menu">
+                <ul class="lista-redes-sociales">
+                    <li class="item-redes-sociales"><?php echo $html->image('facebook.png',
+                                array('alt' => 'Siguenos en Facebook',
+                                      'url' => '#')); ?>
+                    </li>
+                    <li class="item-redes-sociales"><?php echo $html->image('twitter.png',
+                                array('alt' => 'Siguenos en Twitter',
+                                      'url' => '#')); ?>
+                    </li>
+                    <li class="item-redes-sociales"><?php echo $html->image('delicious.png',
+                                array('alt' => 'Agreganos a tu Delicious',
+                                      'url' => '#')); ?>
+                    </li>
+                    <li class="item-redes-sociales"><?php echo $html->image('flickr.png',
+                                array('alt' => 'Nuestras Fotos en Flickr',
+                                      'url' => '#')); ?>
+                    </li>
+                    <li class="item-redes-sociales"><?php echo $html->image('feed.png',
+                                array('alt' => 'Siguenos usando RSS',
+                                      'url' => '#')); ?>
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+      </div>
+  </div>
+</div>
+
 <?php
 echo $javascript->link('buscador')."\n";
 ?>

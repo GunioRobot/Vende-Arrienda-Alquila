@@ -1,0 +1,232 @@
+/* 
+    Document   : estilo
+    Created on : 14/06/2010, 11:24:35 AM
+    Author     : fabian
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body {
+    margin:0;
+    padding: 0;
+    font-family: "arial", "sans-serif"}
+
+.envoltura{
+    width:950px;
+    margin: 0 auto;
+ }
+ .header-envoltura{
+     background: transparent url(../img/bg-header.jpg) no-repeat top left;
+     height: 140px;
+}
+.menu-superior a{
+color:#4aae30;
+font-weight: bold;
+font-size: 0.8em;
+}
+
+.menu-superior-lista{
+float:right;
+}
+.item-menu-superior{
+    display:inline;
+    list-style:none;
+    text-align: right;
+    padding-left:20px;
+}
+.header-logo-vende{
+    background: transparent url(../img/logo-vende.jpg) no-repeat top left;
+    width:223px;
+    height:126px;
+}
+.header-envoltura-menu-top{
+        float:right;
+        position: relative;
+        top:-33px;
+        z-index: 1;
+}
+.menu-top{
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 3px;
+}
+.menu-top a{
+   color:#000000;
+
+}
+
+.item-menu-top {
+    float: left;
+    list-style:none;
+    height:24px;
+    width: 130px;
+    text-align: center;
+}
+
+.item-menu-top a:hover {
+    float:left;
+    position:relative;
+    top:-12px;
+    padding-top: 15px;
+    vertical-align: middle;
+    background:transparent url(../img/bg-menu-top-item-hover.png) no-repeat top left  ;
+    width: 130px;
+    height: 20px;
+    
+}
+.barra-header{
+    background: transparent url(../img/bg-menu-top.png) repeat-x top left;
+    position: relative;
+    top:-33px;
+    width:950px;
+    height: 36px;
+    z-index: 0;
+}
+a {
+    text-decoration: none;
+ }
+a img {
+     border: none;
+}
+.contenido-left{
+    float:left;
+    width:425px;
+}
+.busqueda-envoltura{
+position: relative;
+top:-26;
+width:400px;
+border:#cccccc solid 1px;
+-moz-border-radius: 6px;
+padding:10px;
+font-weight: bold;
+text-align: center;
+text-transform: uppercase;
+float:left;
+margin-bottom:12px;
+
+}
+.busqueda-titulo{
+float:left;
+font-size: 0.8em;
+line-height: 20px;
+}
+.input-busqueda{
+    border:#cccccc solid 1px;
+    background-color: #4aae30;
+    color:#ffffff;
+    text-align: center;
+    width: 160px;
+    margin-bottom: 10px;
+}
+.envoltura-caja-contenido-busqueda{
+        font-size: 0.8em;
+    font-weight: bold;
+    float: right;
+    margin: 0 10px 0 10px;
+}
+.envoltura-busqueda-detallada{
+    position:relative;
+    top:-26;
+    -moz-border-radius:6px;
+    border:#cccccc solid 1px;
+    float:left;
+    width:420px;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+}
+.busqueda-detallada-bloque{
+    margin-bottom: 10px;
+}
+.negocio-titulo{
+    width:230px;
+    float:left;
+}
+.opciones-tipo-negocio{
+    width:160px;
+    border:1px solid #4AAE30;
+}
+.boton-enviar{
+    -moz-border-radius:6px;
+    float:right;
+    border: 1px solid #4aae30;
+    padding:1px;
+}
+.enviar{
+    -moz-border-radius:6px;
+    background-color: #000000;
+    border: none;
+    color:#DCDEDA;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.banner-todos{
+    background: transparent url(../img/negocios.jpg) no-repeat  top left;
+    height: 63px;
+    margin:20px;
+}
+.contenido-right{
+    float:right;
+}
+.envoltura-caja{
+    -moz-border-radius:6px;
+    position:relative;
+    top:-26px;
+    border:#cccccc solid 1px;
+    width:515px;
+    margin-bottom: 12px;
+    
+}
+.envoltura-caja-header{
+    -moz-border-radius-topleft:6px;
+    -moz-border-radius-topright:6px;
+    color:#4AAE30;
+    background: #dcdeda url(../img/bg-noticia-titulo.jpg) repeat-x bottom left;
+    height: 30px;
+    margin: 1px;
+    padding:10px 0 10px 10px;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+.caja-titulo {
+    padding:0;
+    margin:0;
+}
+.envoltura-caja-contenido{
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 0 20px 10px 10px;
+}
+.envoltura-redes-sociales-menu{
+    height: 28px;
+    position: relative;
+    top:-23px;
+  
+}
+.lista-redes-sociales{
+    padding-top: 20px;
+    
+}
+.item-redes-sociales{
+    display: inline;
+    list-style:none;
+    text-align: right;
+    padding: 0 30px 0 25px;
+}
+.envoltura-footer{
+background: transparent url(../img/bg-header.jpg) no-repeat top left;
+float:left;
+position: relative;
+width: 950px;
+top:-26px;
+
+}
+.envoltura-footer-top{
+background: transparent url(../img/bg-footer.png) repeat-x top left;
+height: 36px;
+}
+.envoltura-footer-contenido{
+font-size: 0.7em;
+text-align: center;
+color:#4AAE30;
+}

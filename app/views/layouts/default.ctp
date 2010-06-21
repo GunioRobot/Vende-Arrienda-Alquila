@@ -35,46 +35,40 @@
 		echo $html->charset()."\n";
 		echo $html->meta('icon')."\n";
 
-        echo $html->css('cake.generic')."\n";
+        //Comentar esto se tira el Scaffolding
+        //echo $html->css('cake.generic')."\n";
         echo $html->css('flashhelper')."\n";
         echo $html->css('authake')."\n";
 
         //Project CSS
         echo $html->css('mcarrascal')."\n";
 
+        // CSS De Fabian
+        echo $html->css('fabian')."\n";
+
 		echo $scripts_for_layout;
 	?>
 </head>
 <body>
-	<div id="container">
-		<div id="header">
-			<h1><?php echo $html->link(__('CakePHP: the rapid development php framework', true), '/'); ?></h1>
-		</div>
-		<div id="content">
-			<?php
-				if ($session->check('Message.flash')):
-                    $session->flash();
-				endif;
-			?>
-
+<div class="envoltura">
+<?php echo $this->element('header'); ?>
+<?php
+    if ($session->check('Message.flash')):
+        $session->flash();
+    endif;
+?>
+<!-- Se perdio el espacio para este menu -->
+<!--
             <div id="menu">
             <?php echo $this->element('menu'); ?>
             <?php //echo $this->element('loggin_st'); ?>
             </div>
             <div class="clear"></div>
+-->
 
-			<?php echo $content_for_layout; ?>
-
-		</div>
-		<div id="footer">
-			<?php echo $html->link(
-							$html->image('cake.power.gif', array('alt'=> __("CakePHP: the rapid development php framework", true), 'border'=>"0")),
-							'http://www.cakephp.org/',
-							array('target'=>'_new'), null, false
-						);
-			?>
-		</div>
-	</div>
-	<?php echo $cakeDebug; ?>
+<?php echo $content_for_layout; ?>
+<?php echo $this->element('footer'); ?>
+</div>
+<?php echo $cakeDebug; ?>
 </body>
 </html>
