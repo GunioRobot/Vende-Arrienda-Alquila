@@ -13,7 +13,6 @@ echo $javascript->link('buscador')."\n";
                   <button class="enviar" name="enviar">Buscar</button>
       </div>
       </div>
-  </form>
   </div>
   <div class="envoltura-busqueda-detallada">
       <div class="envoltura-caja-header">
@@ -21,30 +20,40 @@ echo $javascript->link('buscador')."\n";
       </div>
       <div class="envoltura-caja-contenido">
           <p></p>
-          <form class="formulario" name="busqueda-detallada">
           <div class="busqueda-detallada-bloque">
           <div class="negocio-titulo">Tipo de negocio</div>
-          <select class="opciones-tipo-negocio">
-              <option class="opcion-tipo-negocio">opcion1</option>
-              <option class="opcion-tipo-negocio">opcion2</option>
-              <option class="opcion-tipo-negocio">opcion3</option>
+          <select class="opciones-tipo-negocio" name="data[Buscador][site_id]">
+            <option class="opcion-tipo-negocio" value="0">---</option>
+            <option class="opcion-tipo-negocio" value="1">Vende</option>
+            <option class="opcion-tipo-negocio" value="2">Arrienda</option>
+            <option class="opcion-tipo-negocio" value="3">Alquila/Temporadas</option>
           </select>
           </div>
           <div class="busqueda-detallada-bloque">
           <div class="negocio-titulo">Subcategorias</div>
-          <select class="opciones-tipo-negocio">
-              <option class="opcion-tipo-negocio">opcion1</option>
-              <option class="opcion-tipo-negocio">opcion2</option>
-              <option class="opcion-tipo-negocio">opcion3</option>
-          </select>
+<?php
+
+array_unshift($ciudades, ' ');
+
+$img = $html->image('loader.gif', array('class' => 'loader'));
+
+echo $form->select('subcat', $subcats, null, array('class' => 'opcion-tipo-negocio'));
+
+//
+?>
           </div>
           <div class="busqueda-detallada-bloque">
           <div class="negocio-titulo">Ciudad</div>
-          <select class="opciones-tipo-negocio">
-              <option class="opcion-tipo-negocio">opcion1</option>
-              <option class="opcion-tipo-negocio">opcion2</option>
-              <option class="opcion-tipo-negocio">opcion3</option>
-          </select>
+<?php
+echo $form->select('ciudad', $ciudades, null, array('id' => 'ciudad', 'class' => 'opcion-tipo-negocio')); 
+echo $html->image('loader.gif', array('class' => 'loader'));
+?>
+          </div>
+          <div class="busqueda-detallada-bloque">
+          <div class="negocio-titulo">Zonas</div>
+          <div id="szona">
+<?php echo $form->select('zona', array('....'), array('id' => 'zonas', 'class' => 'opcion-tipo-negocio')); ?>
+          </div>
           </div>
               <div class="boton-enviar">
                   <button class="enviar" name="enviar">Buscar</button>
@@ -119,15 +128,6 @@ echo $javascript->link('buscador')."\n";
 </div>
 
 
-<div id="box" style="width:350px;">
-Busqueda Detallada
-<p>Tipo de Negocio: 
-<select name="data[Buscador][site_id]">
-    <option value="0">---</option>
-    <option value="1">Vende</option>
-    <option value="2">Arrienda</option>
-    <option value="3">Alquila/Temporadas</option>
-</select></p>
 <?php
 
 array_unshift($ciudades, ' ');
