@@ -250,14 +250,81 @@ font-size: 0.7em;
 text-align: center;
 color:#4AAE30;
 }
-/* tablas */
-.tabla-envoltura{
-    margin-top:30px;
-}
-
 /*publicar inmueble estilos*/
 .seleccion-caja{
     margin:30px 10px 10px 10px;
 
+}
+
+.campotexto{
+    margin:10px 0 5px 0;
+}
+
+.input [type="select"]{
+    width:100px;
+}
+fieldset {
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border:#4aae30 solid 1px;
+    width:385px;
+    padding: 10px;
+    margin-left: 10px;
+}
+legend{
+    color: #069;
+    font-weight: bold;
+}
+#step1_to_step2_btn_container{
+    text-align: right;
+}
+#step2_to_step1_btn_container{
+    float: left;
+
+}
+#step2_to_step3_btn_container{
+    text-align: right;
+}
+#step3_to_step2_btn_container{
+  float: left;
+}
+#step3_to_step4_btn_container{
+    text-align: right;
+}
+#step4_to_step3_btn_container{
+     float: left;
+}
+#step4_to_step5_btn_container{
+     text-align: right;
+}
+/*paso 2*/
+#inmuebles{
+    float:left;
+}
+#vehiculos{
+    float:right;
+}
+
+/* Tabla */
+.tabla-envoltura{
+
+    width:700px;
+    margin: 0 auto;
+}
+.tabla{
+    border: 1px solid #000000;
+    width:700px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.header-tabla{
+    background-color: #4aae30;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.body-tabla{
+    background-color: #dcdeda;
 }
 
