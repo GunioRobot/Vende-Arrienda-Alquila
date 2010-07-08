@@ -2,21 +2,30 @@
 echo $javascript->link('jquery/jquery-1.3.2.min.js')."\n";
 echo $javascript->link('jquery/babysteps.js');
 echo $javascript->link('forms')."\n";
-
-
 echo $form->create('Inmuebl');
 ?>
-
+<div class="envoltura-caja" style="width:950px;">
 <div id="step1" class="step">
-Este es el paso Uno
+    <div class="envoltura-caja-header">
+    <h1 class="caja-titulo">Este es el paso Uno</h1>
+    <h2 class="caja-subtitulo">Selecciona el tipo de anuncio que quieres publicar y define a que categoría pertenece</h2>
+    </div>
+    <div class="seleccion-caja">
+        <div class="campotexto">
 <?php
 echo $form->input('site_id', array(
             'options' => array('-- Tipo de Anuncio --','Vende', 'Arrienda', 'Alquila x Temporadas'),
             'after' => $html->image('loader.gif', array('class' => 'loader loader-site'))
     ));
-
-echo $form->input('titulo');
-
+?>
+            </div>
+        <div class="campotexto">
+        <?php
+        echo $form->input('titulo');
+        ?>
+        </div>
+    </div>
+    <?php
 array_unshift($categorias, '- Seleccione una Categoria - ');
 ?>
 <fieldset>
@@ -35,9 +44,12 @@ echo $form->input('subcategoria_id', array(
 </div>
 
 <div id="step2" class="step">
-Este es el paso Dos
-<div id="campos">
-<fieldset>
+    <div class="envoltura-caja-header">
+        <h1 class="caja-titulo">Este es el paso Dos</h1>
+        <h2 class="caja-subtitulo">Subtitulo</h2>
+</div>
+<div class="seleccion-caja">
+    <fieldset style="float:left; width:200px; height: 65px;">
 <legend>Ubicaci&oacute;n</legend>
 <?php
 array_unshift($paises, '- Seleccione un Pais -');
@@ -75,7 +87,7 @@ echo $form->input('direccion', array(
 
 ?>
 </fieldset>
-<fieldset>
+<fieldset style="width: 500px; height:65px; margin-left: 10px;">
 <legend>Adicional</legend>
 <div id="inmuebles">
 <?php
@@ -104,7 +116,12 @@ echo $form->input('marca');
 </div>
 
 <div id="step3" class="step">
-Este es el paso Tres
+    <div class="envoltura-caja-header">
+        <h1 class="caja-titulo">Este es el paso Tres</h1>
+        <h2 class="caja-subtitulo">subtitulo</h2>
+
+</div>
+    <div class="seleccion-caja">
 <fieldset>
 <legend>Precios</legend>
 
@@ -174,10 +191,15 @@ echo $html->div('dia_baja',
 </fieldset>
 </div>
 </fieldset>
+</div>   
 </div>
 
 <div id="step4" class="step">
-Este es el paso cuatro
+    <div class="envoltura-caja-header">
+        <h1 class="caja-titulo">Este es el paso cuatro</h1>
+        <h2 class="caja-subtitulo">Subtitulo</h2>
+    </div>
+    <div class="seleccion-caja">
 <fieldset>
 <legend>Caracteristicas</legend>
 <div id="cinmuebles">
@@ -207,12 +229,19 @@ echo $form->input('observaciones');
 ?>
 </div>
 </fieldset>
+        </div>
 </div>
 
 <div id="step5" class="step">
-Este es el paso cinco
+    <div class="envoltura-caja-header">
+        <h1 class="caja-titulo">Este es el paso cinco</h1>
+        <h2 class="caja-subtitulo">Subtitulo</h2>
+</div>
+    <div class="seleccion-caja">
 <?php
 echo $form->submit('Guardar Anuncio');
 echo $form->end();
 ?>
+        </div>
+</div>
 </div>

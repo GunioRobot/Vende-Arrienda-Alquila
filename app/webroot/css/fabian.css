@@ -1,4 +1,4 @@
-/* 
+/*
     Document   : estilo
     Created on : 14/06/2010, 11:24:35 AM
     Author     : fabian
@@ -34,15 +34,32 @@ float:right;
     text-align: right;
     padding-left:20px;
 }
+.header-logo{
+    height:80px;
+    padding-top:15px;
+}
 .header-logo-vende{
-    background: transparent url(../img/logo-vende.jpg) no-repeat top left;
-    width:223px;
-    height:126px;
+    background: transparent url(../img/Vende_net.png) no-repeat top left;
+    width:191px;
+    height:80px;
+    float:left;
+}
+.header-logo-alquila{
+    background: transparent url(../img/Alquila_net.png) no-repeat top left;
+    width:228px;
+    height:80px;
+    float:left;
+    margin:0 50px 0 50px;
+}
+.header-logo-arrienda{
+    background: transparent url(../img/Arrienda_net.png) no-repeat top left;
+    width:257px;
+    height:80px;
+    float:left;
 }
 .header-envoltura-menu-top{
         float:right;
         position: relative;
-        top:-33px;
         z-index: 1;
 }
 .menu-top{
@@ -72,12 +89,11 @@ float:right;
     background:transparent url(../img/bg-menu-top-item-hover.png) no-repeat top left  ;
     width: 130px;
     height: 20px;
-    
+
 }
 .barra-header{
     background: transparent url(../img/bg-menu-top.png) repeat-x top left;
     position: relative;
-    top:-33px;
     width:950px;
     height: 36px;
     z-index: 0;
@@ -87,6 +103,11 @@ a {
  }
 a img {
      border: none;
+}
+.contenido-envoltura{
+float:left;
+width:950px;
+margin-top:10px;
 }
 .contenido-left{
     float:left;
@@ -168,14 +189,14 @@ line-height: 20px;
 .contenido-right{
     float:right;
 }
+
 .envoltura-caja{
     -moz-border-radius:6px;
     position:relative;
-    top:-26px;
     border:#cccccc solid 1px;
     width:515px;
     margin-bottom: 12px;
-    
+
 }
 .envoltura-caja-header{
     -moz-border-radius-topleft:6px;
@@ -201,11 +222,11 @@ line-height: 20px;
     height: 28px;
     position: relative;
     top:-23px;
-  
+
 }
 .lista-redes-sociales{
     padding-top: 20px;
-    
+
 }
 .item-redes-sociales{
     display: inline;
@@ -218,8 +239,6 @@ background: transparent url(../img/bg-header.jpg) no-repeat top left;
 float:left;
 position: relative;
 width: 950px;
-top:-26px;
-
 }
 .envoltura-footer-top{
 background: transparent url(../img/bg-footer.png) repeat-x top left;
@@ -230,3 +249,8 @@ font-size: 0.7em;
 text-align: center;
 color:#4AAE30;
 }
+/* tablas */
+.tabla-envoltura{
+    margin-top:30px;
+}
+

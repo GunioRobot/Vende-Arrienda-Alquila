@@ -1,4 +1,4 @@
-<?php 
+<?php
 //var_dump($paginado);
 ///echo $paginator->sort('ID', 'id');
 /**
@@ -25,3 +25,4 @@ echo $paginator->counter(array('separator' => ' de '));
 </tr>
 <?php } ?>
 </table>
+
