@@ -1,7 +1,7 @@
 $(function(){
 
-$.fn.bindStep.defaults.nextBtn = '/cake/app/webroot/img/arrow_right_48.png';
-$.fn.bindStep.defaults.prevBtn = '/cake/app/webroot/img/arrow_left_48.png';
+$.fn.bindStep.defaults.nextBtn = '../img/arrow_right_48.png';
+$.fn.bindStep.defaults.prevBtn = '../img/arrow_left_48.png';
 
 var step1 = $('#step1');
 var step2 = $('#step2');
@@ -28,8 +28,8 @@ $('#InmueblSiteId').change(function(){
         $('#arrienda').hide();
         $('#alquila').hide();
 
-    } 
-    
+    }
+
     if ($(this).val() == 2) {
         $('#cat1').val(1);
         $('#arrienda').show();
@@ -50,14 +50,14 @@ $('#InmueblSiteId').change(function(){
 
 $('#cat1').change(function(){
     $('.loader-cat1').show();
-    $.getJSON("/subcategorias/getAll/" + $(this).val(), 
-        { }, 
+    $.getJSON("/subcategorias/getAll/" + $(this).val(),
+        { },
         function(data, status){
-            $("#cat2").empty();            
+            $("#cat2").empty();
             $.each(data.items, function(id, nombre){
                 $("#cat2").append($("<option></option>").attr("value", id).text(nombre));
             });
-            
+
             if(status == "success") {
                 $('.loader-cat1').hide();
             }
@@ -79,7 +79,7 @@ $('#cat1').change(function(){
 
 $('#cat2').change(function(){
     if ($(this).val() == '3') $('.admon').hide();
-    
+
 });
 
 $('#pais').change(function(){
@@ -91,9 +91,9 @@ $('#pais').change(function(){
         $("#dpto").empty();
     }
 
-    $.getJSON("/departamentos/getAll/" + $(this).val(), {}, 
+    $.getJSON("/departamentos/getAll/" + $(this).val(), {},
         function(data, status){
-            $.each(data.items, function(id, nombre){         
+            $.each(data.items, function(id, nombre){
                 $("#dpto").append($("<option></option>").attr("value", id).text(nombre));
             });
 
@@ -107,18 +107,18 @@ $('#pais').change(function(){
 $('#dpto').change(function(){
 
     $('.loader-dpto').show();
-    
+
     if ($("#ciudad option").size() > 1) {
         $("#input_ciudad").hide();
         $("#ciudad").empty();
     }
 
-    $.getJSON("/ciudades/getAll/" + $(this).val(), {}, 
+    $.getJSON("/ciudades/getAll/" + $(this).val(), {},
         function(data, status){
         $.each(data.items, function(id, nombre){
             $("#ciudad").append($("<option></option>").attr("value", id).text(nombre));
         });
-   
+
         if(status == "success") {
             $('.loader-dpto').hide();
             $("#input_ciudad").show();
@@ -128,7 +128,7 @@ $('#dpto').change(function(){
 
 $('#ciudad').change(function(){
     $('.loader-ciudad').show();
-    $.getJSON("/zonas/getAll/" + $(this).val(), {}, 
+    $.getJSON("/zonas/getAll/" + $(this).val(), {},
         function(data, status){
         $('#zona').empty();
         $.each(data.items, function(id, nombre){
@@ -156,3 +156,4 @@ $('#ccerrado').change(function(){
 
 
 });
+
