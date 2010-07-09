@@ -1,88 +1,69 @@
 
+#authake  {
+margin-bottom:90px;
+}
+ul{
 
-
-/* Reset... */
-
-div#authake * {
     margin:0;
     padding:0;
-    border: 0;
-    font-family: sans-serif;
-    font-size: 1em;
-    font-style: normal;
-    text-decoration: none; 
 }
-
-div#authake {
-    padding-top: 0.5em;
-}
-
-div#authake .view {
-    margin: 0;
-    padding: 0;
-}
-
-
 
 /* Text styles */
 
 div#authake h1, div#authake h2, div#authake h3, div#authake h4, div#authake legend {
     color: #069;
     font-weight: bold;
-    font-family:'Gill Sans','lucida grande',helvetica,arial,sans-serif;
+   
 }
 
 div#authake h2, div#authake legend {
-    font-size: 2.2em;
-    padding-top: 0em;
-    padding-bottom: 0em;
-    margin-top: 0em;
-    margin-bottom: 0.4em;
 }
 
 div#authake legend {
-    margin-bottom: 12px;     /* margin equal to ul padding-top */
+
 }
 
 div#authake h3 {
-    padding-top:1.5em;
-    font-size:165%;
+
+
 }
 
 div#authake h4 {
-    margin-bottom: 0.3em;
+
 }
 
-div#authake em {
-    font-style: italic;
-}
+
 
 
 
 /* Forms */
 
+div#authake .campotexto{
+    margin:10px 0 5px 0;
+}
+
 div#authake form {
     clear: none;
-    margin: 0 0 1.5em 0;
+    margin: 0 0 0.5em 0;
 }
 
 div#authake fieldset {
-    margin-top: 0;
-    padding: 0;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border:#4aae30 solid 1px;
+    width:385px;
+    padding: 10px;
 }
 
 div#authake label {
     float: left;
     width: 15em;
-    margin: 0.7em 1em 0.7em 0;
     font-weight: bold;
-    text-align: right;
 }
 
 div#authake input, div#authake select, div#authake textarea {
     display: inline;
     width: auto;
-    margin: 0.7em auto;
     padding: 0;
     border: 1px solid #ccc;
 }
@@ -107,15 +88,28 @@ div#authake textarea:focus, div#authake input:focus {
 }
 
 div#authake div.submit input {
-    margin-left: 16em;
-    padding: 0em 1em;
-    width: auto;
+    background-color:#000000;
+    color:#DCDEDA;
+    border:none;
     font-weight: bold;
-    border: 2px solid #ddd;
-    background-color: #f9f9f9;
+    text-transform: uppercase;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+}
+
+
+div#authake .validacion-login{
+    float:left;
+}
+div#authake .olvido-pass {
     
-    -moz-border-radius-topright: 0.7em;
-    -moz-border-radius-bottomleft: 0.5em;
+
+}
+
+div#authake .lostpassword {
+    margin:0;
+    padding:0;
+
 }
 
 div#authake form div.required input {
@@ -133,26 +127,22 @@ div#authake input[type="checkbox"] {
 /* Actions buttons */
 
 div#authake div.actions>ul>li {
-    border: 2px solid #ddd;
-    background-color: #f9f9f9;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-right: 5px;
-    margin: auto 0.3em;
-    
-    -moz-border-radius-topright: 0.7em;
-    -moz-border-radius-bottomleft: 0.5em;
+    background-color: #000000;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    padding: 0 0.3em;
 }
 div#authake div.actions a {
-    font-size: 1.1em;
     font-weight: bold;
+    color:#DCDEDA;
+    text-transform: uppercase;
 }
 div#authake div.actions>ul>li:hover {
-    background-color: #ddd;
+    
 }
 div#authake div.actions>ul>li>a:hover {
     text-decoration: none;
-    color: #333;
+    color:#4AAE30;
 }
 
 
@@ -160,8 +150,8 @@ div#authake div.actions>ul>li>a:hover {
 div#authake li.icon {
     list-style-type: none;
     background-repeat: no-repeat;
-    background-position: 5% 50%;
-    padding-left: 28px
+
+
 }
 
 div#authake li.info {
@@ -242,10 +232,6 @@ div#authake li.accept {
 
 div#authake li.delete {
     background-image: url(../img/icons/delete.png);
-}
-
-div#authake li.door_in {
-    background-image: url(../img/icons/door_in.png);
 }
 
 div#authake li.error {
@@ -335,7 +321,7 @@ div#authake table.listing tr.disabled td, div#authake table.listing tr.disabled 
 /* Paging */
 div#authake p.paging_count {
     text-align: right;
-    font-size: 95%;
+    
     font-style: italic;
     color: #999;
 }

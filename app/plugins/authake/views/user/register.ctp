@@ -1,20 +1,36 @@
-<div id="authake">
-<?php echo $this->renderElement('gotohomepage'); ?>
+<div id="authake" >
 <div class="register form">
 <?php echo $form->create(null, array('action'=>'register'));?>
-	<fieldset>
+	<fieldset style="width:600px;">
  		<legend><?php __('Registration');?></legend>
-<?php
-        
-    echo $form->input('login', array('label'=>__('Username', true), 'size'=>'12'));
-    echo $form->input('email', array('label'=>__('Email', true), 'size'=>'40'));
-    echo $form->input('password1', array('type'=>'password', 'label'=>__('Password', true), 'value' => '', 'size'=>'12'));
-    echo $form->input('password2', array('type'=>'password', 'label'=>__('Please, re-enter password', true), 'value' => '', 'size'=>'12'));
-        
-    echo $form->end(__('Register', true));
-?>
+                <div class="campotexto">
+                <?php
+                    echo $form->input('login', array('label'=>__('Username', true), 'size'=>'12'));
+                 ?>
+                 </div>
+                 <div class="campotexto">
+                <?php
+                    echo $form->input('email', array('label'=>__('Email', true), 'size'=>'40'));
+                 ?>
+                 </div>
+                <div class="campotexto">
+                <?php
+                    echo $form->input('password1', array('type'=>'password', 'label'=>__('Password', true), 'value' => '', 'size'=>'12'));
+                 ?>
+                </div>
+                <div class="campotexto">
+                <?php
+                    echo $form->input('password2', array('type'=>'password', 'label'=>__('Please, re-enter password', true), 'value' => '', 'size'=>'12'));
+                 ?>
+                    </div>
+                
 	</fieldset>
-</div>
+    </div>
+    <div class="boton-enviar">
+                <?php
+                    echo $form->end(__('Register', true));
+                 ?>
+                    </div>
 </div>
 
 

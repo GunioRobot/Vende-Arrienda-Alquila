@@ -11,7 +11,7 @@ class BuscadoresController extends AppController {
 
         $this->pageTitle = 'Resultados';
 
-        var_dump($this->data);
+        //var_dump($this->data);
 
         /**
          * Busqueda por Codigo
@@ -30,7 +30,7 @@ class BuscadoresController extends AppController {
             if ($result) {
                 // Envio a la vista del resultado
                 $this->redirect(array(
-                        'controller' => 'inmuebles', 
+                        'controller' => 'inmuebles',
                         'action' => 'ver/'.$result['Inmuebl']['id']));
             }
         }
@@ -57,3 +57,4 @@ class BuscadoresController extends AppController {
     }
 }
 ?>
+
