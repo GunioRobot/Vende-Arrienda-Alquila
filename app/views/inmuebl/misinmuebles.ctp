@@ -21,9 +21,10 @@
 <?php } ?>
 </table>
         </div>
-    <div class="enviar" >
-    <div class="boton-enviar" style="margin: 10px 0 10px 0;">
+    <!-- ><div class="enviar" > -->
+    <div class="boton-enviar" style="margin: 20px 0 10px 0;">
         <button class="enviar" name="enviar"><?php echo $html->link('Publicar Inmueble', 'publicar'); ?></button>
     </div>
-        </div>
+        <!--></div>-->
 </div>
+

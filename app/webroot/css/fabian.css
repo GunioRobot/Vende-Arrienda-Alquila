@@ -263,6 +263,9 @@ color:#4AAE30;
 .input [type="select"]{
     width:100px;
 }
+.input {
+    margin:5px 0 5px 0;
+}
 fieldset {
     -moz-border-radius:6px;
     -webkit-border-radius:6px;
