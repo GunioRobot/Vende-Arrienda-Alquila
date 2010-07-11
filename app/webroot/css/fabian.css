@@ -11,6 +11,7 @@ body {
     padding: 0;
     font-family: "arial", "sans-serif"}
 
+
 .envoltura{
     width:950px;
     margin: 0 auto;
@@ -61,6 +62,7 @@ float:right;
         float:right;
         position: relative;
         z-index: 1;
+        top:15px;
 }
 .menu-top{
     text-transform: uppercase;
@@ -101,6 +103,9 @@ float:right;
 a {
     text-decoration: none;
  }
+a:hover{
+    color:#000000;
+}
 a img {
      border: none;
 }
