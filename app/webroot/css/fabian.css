@@ -229,13 +229,11 @@ line-height: 20px;
     margin: 0 20px 10px 10px;
 }
 .envoltura-redes-sociales-menu{
-    height: 28px;
+    height: 50px;
     position: relative;
-    top:-23px;
-
 }
 .lista-redes-sociales{
-    padding-top: 20px;
+    padding: 19px 0 0 45px;
 
 }
 .item-redes-sociales{
@@ -342,6 +340,6 @@ legend{
 /*lista noticias*/
 
 .lista-noticias{
-    margin-left:40px;
+    margin:30px;
 }
 
