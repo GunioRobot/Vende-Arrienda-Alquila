@@ -136,6 +136,8 @@ margin-bottom:12px;
 float:left;
 font-size: 0.8em;
 line-height: 20px;
+text-align: left;
+width:230px;
 }
 .input-busqueda{
     border:#cccccc solid 1px;
@@ -179,6 +181,10 @@ line-height: 20px;
     border: 1px solid #4aae30;
     padding:1px;
 }
+.registro{
+    float:left;
+    margin-left: 10px;
+}
 .enviar{
     -moz-border-radius:6px;
     background-color: #000000;
@@ -204,6 +210,9 @@ line-height: 20px;
     margin-bottom: 12px;
     padding-bottom:10px;
 
+}
+.bienvenida{
+    background-color: #fbf0c8;
 }
 .envoltura-caja-header{
     -moz-border-radius-topleft:6px;

@@ -26,7 +26,7 @@
                 
 	</fieldset>
     </div>
-    <div class="boton-enviar">
+    <div class="boton-enviar registro">
                 <?php
                     echo $form->end(__('Register', true));
                  ?>

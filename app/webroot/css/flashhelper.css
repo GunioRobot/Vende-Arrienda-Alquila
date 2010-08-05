@@ -1,31 +1,30 @@
 .flash_box {
-    margin: -10px 10% 20px 10%;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    margin: 5px 10% 10px 10%;
     width: auto;
     left: 0%;
     padding: 0.5em 2em;
     position: relative;
-    
     font-weight: bold;
     font-size: 120%;
-    color: white;
     text-align: center;
-
-    -moz-border-radius-bottomleft: 2em;
-    -moz-border-radius-bottomright: 2em;
 }
 
 .flash_info {
-    background-color: #09C;
+    background-color: #006699;
+    color:#ffffff;
 }
 
 .flash_success {
-    background-color: #0A0;
+    background-color: #4aae30;
 }
 
 .flash_warning {
-    background-color: #F60;
+    background-color: #FDB833;
 }
 
 .flash_error {
-    background-color: #900;
+    background-color: #DC0303;
+    color:#ffffff;
 }
