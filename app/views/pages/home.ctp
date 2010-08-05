@@ -33,27 +33,28 @@ echo $javascript->link('buscador')."\n";
           <div class="negocio-titulo">Subcategorias</div>
 <?php
 $img = $html->image('loader.gif', array('class' => 'loader'));
-echo $form->select('subcat', $subcats, null, array('class' => 'opcion-tipo-negocio'));
+echo $form->select('subcat', $subcats, null, array('class' => 'opciones-tipo-negocio'));
 ?>
           </div>
           <div class="busqueda-detallada-bloque">
           <div class="negocio-titulo">Ciudad</div>
 <?php
 array_unshift($ciudades, ' ');
-echo $form->select('ciudad', $ciudades, null, array('id' => 'ciudad', 'class' => 'opcion-tipo-negocio')); 
+echo $form->select('ciudad', $ciudades, null, array('id' => 'ciudad', 'class' => 'opciones-tipo-negocio'));
 echo $html->image('loader.gif', array('class' => 'loader'));
 ?>
           </div>
           <div class="busqueda-detallada-bloque">
           <div class="negocio-titulo">Zonas</div>
           <div id="szona">
-<?php echo $form->select('zona', array('....'), array('id' => 'zonas', 'class' => 'opcion-tipo-negocio')); ?>
+<?php //echo $form->select('zona', array('....'), array('id' => 'zonas', 'class' => 'opciones-tipo-negocio'));
+      echo $form->select('zona', array('....'), null, array('id' => 'zonas', 'class' => 'opciones-tipo-negocio'));
+?>
           </div>
           </div>
               <div class="boton-enviar">
                   <button class="enviar" name="enviar">Buscar</button>
               </div>
-          </form>
       </div>
   </div>
          <div class="busqueda-envoltura">
