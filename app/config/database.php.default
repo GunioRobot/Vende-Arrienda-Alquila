@@ -82,10 +82,10 @@ class DATABASE_CONFIG {
 		'driver' => 'mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'database_name',
-		'prefix' => '',
+		'login' => 'root',
+		'password' => '2098fabo',
+		'database' => 'vendenet',
+		'prefix' => 'mc_',
 	);
 
 	var $test = array(

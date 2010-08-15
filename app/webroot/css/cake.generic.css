@@ -27,6 +27,7 @@
 }
 
 /* General Style Info */
+/*
 body {
 	background: #003d4c;
 	color: #fff;
@@ -79,8 +80,9 @@ h4 {
 ul, li {
 	margin: 0 12px;
 }
+*/
+/* Layout
 
-/* Layout */
 #container {
 	text-align: left;
 }
@@ -116,6 +118,7 @@ ul, li {
 	padding: 6px 10px;
 	text-align: right;
 }
+*/
 
 /* Tables */
 table {

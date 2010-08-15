@@ -36,7 +36,7 @@
 		echo $html->meta('icon')."\n";
 
         //Comentar esto se tira el Scaffolding
-        //echo $html->css('cake.generic')."\n";
+        echo $html->css('cake.generic')."\n";
         echo $html->css('flashhelper')."\n";
         echo $html->css('authake')."\n";
 

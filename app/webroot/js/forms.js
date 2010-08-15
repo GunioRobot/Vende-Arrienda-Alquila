@@ -1,7 +1,7 @@
 $(function(){
 
-$.fn.bindStep.defaults.nextBtn = 'http://localhost/vendenet/app/webroot/img/arrow_right_48.png';
-$.fn.bindStep.defaults.prevBtn = 'http://localhost/vendenet/app/webroot/img/arrow_left_48.png';
+$.fn.bindStep.defaults.nextBtn = '/Vendenet/app/webroot/img/arrow_right_48.png';
+$.fn.bindStep.defaults.prevBtn = '/Vendenet/app/webroot/img/arrow_left_48.png';
 
 var step1 = $('#step1');
 var step2 = $('#step2');

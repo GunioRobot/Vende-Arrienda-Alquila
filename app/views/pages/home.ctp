@@ -65,7 +65,7 @@ echo $html->image('loader.gif', array('class' => 'loader'));
   </div>
   </div>
   <div class="contenido-right">
-  <div class="envoltura-caja">
+  <div class="envoltura-caja bienvenida">
       <div class="envoltura-caja-header">
         <h1 class="caja-titulo">Bienvenido</h1>
       </div>

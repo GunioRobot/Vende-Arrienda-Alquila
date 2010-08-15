@@ -13,7 +13,7 @@ echo $form->create('Inmuebl');
     <div class="seleccion-caja">
         <div class="campotexto">
 <?php
-echo $form->input('site_id', array(
+echo $form->input('site_id',  array(
             'options' => array('-- Tipo de Anuncio --','Vende', 'Arrienda', 'Alquila x Temporadas'),
             'after' => $html->image('loader.gif', array('class' => 'loader loader-site'))
     ));
@@ -31,10 +31,7 @@ array_unshift($categorias, '- Seleccione una Categoria - ');
 <fieldset>
 <legend>Categorizaci&oacute;n</legend>
 <?php
-echo $form->input('Categoria', array(
-            'id' => 'cat1', 'options' => $categorias,
-            'after' => $html->image('loader.gif', array('class' => 'loader loader-cat1'))
-    ));
+echo $form->input('Categoria', array('id' => 'cat1', 'options' => $categorias, 'after' => $html->image('loader.gif', array('class' => 'loader loader-cat1'))));
 
 echo $form->input('subcategoria_id', array(
             'id' => 'cat2', 'options' => array('- Seleccione una Categoria -')));
@@ -49,7 +46,7 @@ echo $form->input('subcategoria_id', array(
         <h2 class="caja-subtitulo">Subtitulo</h2>
 </div>
 <div class="seleccion-caja">
-    <fieldset style="float:left; width:200px; height: 65px;">
+    <fieldset style="float:left; width:200px; min-height: 65px;">
 <legend>Ubicaci&oacute;n</legend>
 <?php
 array_unshift($paises, '- Seleccione un Pais -');
@@ -87,7 +84,7 @@ echo $form->input('direccion', array(
 
 ?>
 </fieldset>
-<fieldset style="width: 500px; height:65px; margin-left: 10px;">
+<fieldset style="width: 500px; min-height:65px; margin-left: 10px;">
 <legend>Adicional</legend>
 <div id="inmuebles">
 <?php
