@@ -130,19 +130,16 @@ margin-bottom:12px;
 float:left;
 font-size: 0.8em;
 line-height: 20px;
-text-align: left;
-width:230px;
 }
 .input-busqueda{
-    border:#cccccc solid 1px;
-    background-color: #4aae30;
-    color:#ffffff;
+    border:#4aae30 solid 1px;
     text-align: center;
     width: 160px;
-    margin-bottom: 10px;
+    height:25px;
+    margin-top:12px;
 }
 .envoltura-caja-contenido-busqueda{
-        font-size: 0.8em;
+    font-size: 0.8em;
     font-weight: bold;
     float: right;
     margin: 0 10px 0 10px;

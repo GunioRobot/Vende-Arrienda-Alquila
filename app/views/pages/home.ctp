@@ -4,14 +4,14 @@ echo $javascript->link('buscador')."\n";
 
 <div class="contenido-envoltura">
   <div class="contenido-left">
-  <div class="busqueda-envoltura">
-  <?php echo $form->create('Buscador', array('action' => 'search')); ?>
-      <label class="busqueda-titulo">Busca tu inmueble por código</label>
-      <input type="text" name="data[Buscador][qcode]" class="input-busqueda" />
-      <div class="envoltura-caja-contenido-busqueda">
-      <div class="boton-enviar">
-                  <button class="enviar" name="enviar">Buscar</button>
+      <div class="envoltura-caja" style="width:420px;">
+      <div class="envoltura-caja-header">
+      <h1 class="caja-titulo">Busca tu inmueble por código</h1>
       </div>
+          <div class="envoltura-caja-contenido">
+  <?php echo $form->create('Buscador', array('action' => 'search')); ?>
+       <input type="text" name="data[Buscador][qcode]" class="input-busqueda" />
+                   <button class="enviar" name="enviar">Buscar</button>
       </div>
   </div>
   <div class="envoltura-busqueda-detallada">
