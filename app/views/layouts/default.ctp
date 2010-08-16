@@ -34,18 +34,14 @@
 	<?php
 		echo $html->charset()."\n";
 		echo $html->meta('icon')."\n";
-
+        echo $html->css('fabian')."\n";
         //Comentar esto se tira el Scaffolding
         echo $html->css('cake.generic')."\n";
         echo $html->css('flashhelper')."\n";
         echo $html->css('authake')."\n";
-
         //Project CSS
         echo $html->css('mcarrascal')."\n";
-
         // CSS De Fabian
-        echo $html->css('fabian')."\n";
-
 		echo $scripts_for_layout;
 	?>
 </head>
@@ -65,7 +61,6 @@
             </div>
             <div class="clear"></div>
 -->
-
 <?php echo $content_for_layout; ?>
 <?php echo $this->element('footer'); ?>
 </div>

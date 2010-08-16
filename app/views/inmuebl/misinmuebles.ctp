@@ -4,9 +4,9 @@
 <h1 class="caja-titulo">Mis Inmuebles</h1>
 <h2 class="caja-subtitulo">Esos son los inmuebles actualmente activos</h2>
 </div>
-    <div class="tabla-envoltura">
-<table class="tabla">
-<tr class="header-tabla">
+    <div id="tabla-envoltura">
+<table id="tabla">
+<tr id="header-tabla">
 <th>Codigo</th>
 <th>Estado</th>
 <th>Titulo</th>

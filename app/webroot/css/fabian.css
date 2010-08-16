@@ -5,20 +5,17 @@
     Description:
         Purpose of the stylesheet follows.
 */
-
 body {
     margin:0;
     padding: 0;
     font-family: "arial", "sans-serif"}
-
-
 .envoltura{
     width:950px;
     margin: 0 auto;
  }
- .header-envoltura{
-     background: transparent url(../img/bg-header.jpg) no-repeat top left;
-     height: 140px;
+.header-envoltura{
+    background: transparent url(../img/bg-header.jpg) no-repeat top left;
+    height: 140px;
 }
 .menu-superior a{
 color:#4aae30;
@@ -71,9 +68,7 @@ float:right;
 }
 .menu-top a{
    color:#000000;
-
 }
-
 .item-menu-top {
     float: left;
     list-style:none;
@@ -120,7 +115,6 @@ margin-top:10px;
 }
 .busqueda-envoltura{
 position: relative;
-top:-26;
 width:400px;
 border:#cccccc solid 1px;
 -moz-border-radius: 6px;
@@ -155,7 +149,6 @@ width:230px;
 }
 .envoltura-busqueda-detallada{
     position:relative;
-    top:-26;
     -moz-border-radius:6px;
     border:#cccccc solid 1px;
     float:left;
@@ -176,10 +169,6 @@ width:230px;
     background: transparent;
 }
 .boton-enviar{
-    -moz-border-radius:6px;
-    float:right;
-    border: 1px solid #4aae30;
-    padding:1px;
 }
 .registro{
     float:left;
@@ -192,6 +181,7 @@ width:230px;
     color:#DCDEDA;
     font-weight: bold;
     text-transform: uppercase;
+    padding: 0.3em;
 }
 .banner-todos{
     background: transparent url(../img/negocios.jpg) no-repeat  top left;
@@ -201,7 +191,6 @@ width:230px;
 .contenido-right{
     float:right;
 }
-
 .envoltura-caja{
     -moz-border-radius:6px;
     position:relative;
@@ -209,7 +198,6 @@ width:230px;
     width:515px;
     margin-bottom: 12px;
     padding-bottom:10px;
-
 }
 .bienvenida{
     background-color: #fbf0c8;
@@ -232,6 +220,9 @@ width:230px;
     padding:0;
     margin:0;
 }
+.caja-subtitulo{
+    color: #000000;
+}
 .envoltura-caja-contenido{
     font-size: 0.8em;
     font-weight: bold;
@@ -243,7 +234,6 @@ width:230px;
 }
 .lista-redes-sociales{
     padding: 19px 0 0 45px;
-
 }
 .item-redes-sociales{
     display: inline;
@@ -269,13 +259,10 @@ color:#4AAE30;
 /*publicar inmueble estilos*/
 .seleccion-caja{
     margin:30px 10px 10px 10px;
-
 }
-
 .campotexto{
     margin:10px 0 5px 0;
 }
-
 .input [type="select"]{
     width:100px;
 }
@@ -299,7 +286,6 @@ legend{
 }
 #step2_to_step1_btn_container{
     float: left;
-
 }
 #step2_to_step3_btn_container{
     text-align: right;
@@ -323,32 +309,25 @@ legend{
 #vehiculos{
     float:right;
 }
-
 /* Tabla */
-.tabla-envoltura{
-
-    width:700px;
+#tabla-envoltura{
     margin: 0 auto;
+    padding: 15px;
 }
-.tabla{
-    border: 1px solid #000000;
-    width:700px;
+#tabla{
     margin-top: 20px;
     margin-bottom: 10px;
 }
-.header-tabla{
+#header-tabla{
     background-color: #4aae30;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
     font-weight: bold;
 }
 .body-tabla{
     background-color: #dcdeda;
 }
 /*lista noticias*/
-
 .lista-noticias{
     margin:30px;
 }
-

@@ -131,7 +131,7 @@ div#authake div.actions>ul>li {
     background-color: #000000;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
-    padding: 0 0.3em;
+    padding: 0.2em;
 }
 div#authake div.actions a {
     font-weight: bold;

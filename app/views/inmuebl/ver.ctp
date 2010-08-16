@@ -160,7 +160,7 @@
   </tr>
 </table> -->
 
-  <div class="tabla-envoltura" style="width:900px;">
+  <div class="tabla-envoltura" style="width:900px; margin-left:25px;">
       <table class="tabla" style="width:900px;">
     <tr class="header-tabla">
       <td colspan="4">
