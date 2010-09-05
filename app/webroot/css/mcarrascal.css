@@ -35,6 +35,18 @@ display:none;
     display:none;
 }
 
+.pais-loader {
+    display:none;
+}
+
+.dpto-loader {
+    display:none;
+}
+
+.ciudad-loader {
+    display:none;
+}
+
 #menu {
     margin: 15px;
 }
@@ -86,4 +98,12 @@ display:none;
     
 #jsddm li ul li a:hover {   
     background: #8EA344
+}
+
+#BuscadorPrice-min, #BuscadorPrice-max {
+    width:150px;
+}
+
+#BuscadorAlcobas, #BuscadorCapacidad {
+    width:150px;
 }

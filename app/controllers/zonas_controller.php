@@ -13,7 +13,7 @@ class ZonasController extends AppController {
                 'fields' => array('id', 'nombre'),
                 'conditions' => array('ciudad_id' => $id)
             ));
-
+        $zonas = array('0' => '-Cualquiera-')+$zonas;
         $this->set('zonas', array('items' => $zonas));
         $this->layout = 'ajax';
         Configure::write('debug', 0);

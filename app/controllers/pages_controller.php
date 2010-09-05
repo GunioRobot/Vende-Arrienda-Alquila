@@ -83,8 +83,13 @@ class PagesController extends AppController {
             $this->loadModel('Subcategoria');
             $this->set('subcats', $this->Subcategoria->find('list'));
 
-            $this->loadModel('Ciudad');
-            $this->set('ciudades', $this->Ciudad->find('list'));
+            // Pongo en la vista la lista de paises
+            $this->loadModel('Pais');
+            $this->set('paises', $this->Pais->find('list'));
+
+            // Pongo en la vista la lista de monedas
+            $this->loadModel('Moneda');
+            $this->set('monedas', $this->Moneda->find('list', array('fields' => 'simbolo')));
         }
 
 		$this->set(compact('page', 'subpage', 'title'));

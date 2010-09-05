@@ -13,7 +13,7 @@ class DepartamentosController extends AppController {
                 'fields' => array('id', 'nombre'),
                 'conditions' => array('pais_id' => $id)
             ));
-
+        $dptos = array('0' => '-Cualquiera-')+$dptos;
         $this->set('dptos', array('items' => $dptos));
         $this->layout = 'ajax';
         Configure::write('debug', 0);

@@ -14,6 +14,7 @@ class CiudadesController extends AppController {
                 'conditions' => array('departamento_id' => $id)
             ));
 
+        $ciudades = array('0' => '-Cualquiera-')+$ciudades;
         $this->set('ciudades', array('items' => $ciudades));
         $this->layout = 'ajax';
         Configure::write('debug', 0);

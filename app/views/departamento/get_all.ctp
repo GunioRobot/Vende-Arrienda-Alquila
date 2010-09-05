@@ -1,4 +1,10 @@
 <?php 
 //array_unshift($dptos['items'], '- Seleccione un Departamento -');
-echo json_encode($dptos); 
+/*
+Configure::write('debug', 3);
+debug($dptos);
+Debugger::dump($dptos);
+var_dump($dptos);
+*/
+echo json_encode($dptos);
 ?>

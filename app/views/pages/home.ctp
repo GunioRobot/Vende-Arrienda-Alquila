@@ -1,4 +1,5 @@
 <?php
+echo $javascript->link('jquery/jquery-1.3.2.min.js')."\n";
 echo $javascript->link('buscador')."\n";
 ?>
 
@@ -22,36 +23,64 @@ echo $javascript->link('buscador')."\n";
           <p></p>
           <div class="busqueda-detallada-bloque">
           <div class="negocio-titulo">Tipo de negocio</div>
-          <select class="opciones-tipo-negocio" name="data[Buscador][site_id]">
-            <option class="opcion-tipo-negocio" value="0">---</option>
-            <option class="opcion-tipo-negocio" value="1">Vende</option>
-            <option class="opcion-tipo-negocio" value="2">Arrienda</option>
-            <option class="opcion-tipo-negocio" value="3">Alquila/Temporadas</option>
+          <select id="BuscadorSitio" class="opciones-tipo-negocio" name="data[Buscador][site_id]">
+            <option class="opcion-tipo-negocio" value="0">Elija Uno</option>
+            <option class="opcion-tipo-negocio" value="1">Vender</option>
+            <option class="opcion-tipo-negocio" value="2">Arrienda o Alquila</option>
+            <option class="opcion-tipo-negocio" value="3">Alquila por Temporadas</option>
           </select>
           </div>
           <div class="busqueda-detallada-bloque">
-          <div class="negocio-titulo">Subcategorias</div>
+          <div class="negocio-titulo">Categorias</div>
 <?php
-$img = $html->image('loader.gif', array('class' => 'loader'));
 echo $form->select('subcat', $subcats, null, array('class' => 'opciones-tipo-negocio'));
 ?>
           </div>
-          <div class="busqueda-detallada-bloque">
-          <div class="negocio-titulo">Ciudad</div>
+          <div class="busqueda-detallada-bloque" id="paises">
+              <div class="negocio-titulo">Pa&iacute;s&nbsp;&nbsp;&nbsp;
+<?php echo $html->image('loader.gif', array('class' => 'pais-loader'));?></div>
+
 <?php
-array_unshift($ciudades, ' ');
-echo $form->select('ciudad', $ciudades, null, array('id' => 'ciudad', 'class' => 'opciones-tipo-negocio'));
-echo $html->image('loader.gif', array('class' => 'loader'));
+array_unshift($paises, '-Cualquiera-');
+echo $form->select('pais', $paises, 0, array('class' => 'opciones-tipo-negocio'), false);
 ?>
           </div>
-          <div class="busqueda-detallada-bloque">
+          <div class="busqueda-detallada-bloque" style="display:none;" id="dptos">
+          <div class="negocio-titulo">Departamentos&nbsp;&nbsp;&nbsp;
+<?php echo $html->image('loader.gif', array('class' => 'dpto-loader'));?></div>
+<?php
+echo $form->select('departamento', array('Cargando...'), null, array('class' => 'opciones-tipo-negocio'));
+?>
+          </div>
+          <div class="busqueda-detallada-bloque" style="display:none;" id="ciudades">
+          <div class="negocio-titulo">Ciudad&nbsp;&nbsp;&nbsp;
+<?php echo $html->image('loader.gif', array('class' => 'ciudad-loader'));?></div>
+<?php
+echo $form->select('ciudad', array('Cargando...'), null, array('class' => 'opciones-tipo-negocio'));
+?>
+          </div>
+          <div class="busqueda-detallada-bloque" style="display:none;" id="zonas">
           <div class="negocio-titulo">Zonas</div>
-          <div id="szona">
-<?php //echo $form->select('zona', array('....'), array('id' => 'zonas', 'class' => 'opciones-tipo-negocio'));
-      echo $form->select('zona', array('....'), null, array('id' => 'zonas', 'class' => 'opciones-tipo-negocio'));
-?>
+<?php echo $form->select('zona', array('Cargando...'), null, array('class' => 'opciones-tipo-negocio')); ?>
           </div>
+
+          <div class="busqueda-detallada-bloque" style="display:none;" id="precios">
+          <div class="negocio-titulo">Precio Minimo</div><?php echo $form->text('price-min'); ?>
+          <div class="negocio-titulo">Precio Maximo</div><?php echo $form->text('price-max'); ?>
           </div>
+          
+          <div class="busqueda-detallada-bloque" style="display:none;" id="alcobas">
+          <div class="negocio-titulo">Numero de Alcobas</div><?php echo $form->text('alcobas'); ?>
+          </div>
+
+          <div class="busqueda-detallada-bloque" style="display:none;" id="capacidad">
+          <div class="negocio-titulo">Capacidad de Personas</div><?php echo $form->text('capacidad'); ?>
+          </div>
+
+          <div class="busqueda-detallada-bloque" style="display:none;" id="modelo">
+          <div class="negocio-titulo">Modelo</div><?php echo $form->text('capacidad'); ?>
+          </div>
+
               <div class="boton-enviar">
                   <button class="enviar" name="enviar">Buscar</button>
               </div>
