@@ -8,5 +8,6 @@ class Pais extends AppModel {
     var $displayField = 'nombre';
     var $belongsTo = 'Moneda';
     var $hasMany = 'Departamento';
+    var $recursive = '2';
 }
 ?>

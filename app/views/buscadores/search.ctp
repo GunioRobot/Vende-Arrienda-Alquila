@@ -1,4 +1,5 @@
 <?php
+var_dump($results);
 //var_dump($paginado);
 ///echo $paginator->sort('ID', 'id');
 /**

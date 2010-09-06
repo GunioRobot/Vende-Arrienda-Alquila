@@ -85,7 +85,10 @@ class PagesController extends AppController {
 
             // Pongo en la vista la lista de paises
             $this->loadModel('Pais');
-            $this->set('paises', $this->Pais->find('list'));
+            $this->set('paises', $this->Pais->find('list', array(
+                        'fields' => array('Pais.id', 'Pais.nombre'),
+                        'order' => array('Pais.nombre ASC')
+                    )));
 
             // Pongo en la vista la lista de monedas
             $this->loadModel('Moneda');

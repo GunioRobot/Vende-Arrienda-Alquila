@@ -8,5 +8,6 @@ class Ciudad extends AppModel {
     var $displayField = 'nombre';
     var $belongsTo = 'Departamento';
     var $hasMany = 'Zona';
+    var $recursive = '2';
 }
 ?>

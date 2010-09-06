@@ -41,7 +41,7 @@ echo $form->select('subcat', $subcats, null, array('class' => 'opciones-tipo-neg
 <?php echo $html->image('loader.gif', array('class' => 'pais-loader'));?></div>
 
 <?php
-array_unshift($paises, '-Cualquiera-');
+$paises = array('0' => '-Cualquiera-')+$paises;
 echo $form->select('pais', $paises, 0, array('class' => 'opciones-tipo-negocio'), false);
 ?>
           </div>

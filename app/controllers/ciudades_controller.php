@@ -11,7 +11,8 @@ class CiudadesController extends AppController {
         $ciudades = $this->Ciudad->find('list', 
             array(
                 'fields' => array('id', 'nombre'),
-                'conditions' => array('departamento_id' => $id)
+                'conditions' => array('departamento_id' => $id),
+                'order' => array('Ciudad.nombre ASC')
             ));
 
         $ciudades = array('0' => '-Cualquiera-')+$ciudades;

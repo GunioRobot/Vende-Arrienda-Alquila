@@ -11,7 +11,8 @@ class ZonasController extends AppController {
         $zonas = $this->Zona->find('list', 
             array(
                 'fields' => array('id', 'nombre'),
-                'conditions' => array('ciudad_id' => $id)
+                'conditions' => array('ciudad_id' => $id),
+                'order' => array('Zona.nombre ASC')
             ));
         $zonas = array('0' => '-Cualquiera-')+$zonas;
         $this->set('zonas', array('items' => $zonas));

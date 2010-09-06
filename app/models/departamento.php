@@ -9,5 +9,6 @@ class Departamento extends AppModel {
     var $displayField = 'nombre';
     var $belongsTo = 'Pais';
     var $hasMany = 'Ciudad';
+    var $recursive = '2';
 }
 ?>

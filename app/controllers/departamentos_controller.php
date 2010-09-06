@@ -11,7 +11,8 @@ class DepartamentosController extends AppController {
         $dptos = $this->Departamento->find('list', 
             array(
                 'fields' => array('id', 'nombre'),
-                'conditions' => array('pais_id' => $id)
+                'order' => array('Departamento.nombre ASC'),
+                'conditions' => array('pais_id' => $id)                
             ));
         $dptos = array('0' => '-Cualquiera-')+$dptos;
         $this->set('dptos', array('items' => $dptos));
