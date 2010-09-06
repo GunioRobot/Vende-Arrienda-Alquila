@@ -1,5 +1,4 @@
 <?php
-echo $javascript->link('jquery/jquery-1.3.2.min.js')."\n";
 echo $javascript->link('buscador')."\n";
 ?>
 

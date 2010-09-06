@@ -34,15 +34,19 @@
 	<?php
 		echo $html->charset()."\n";
 		echo $html->meta('icon')."\n";
+        // CSS de Fabian
         echo $html->css('fabian')."\n";
-        //Comentar esto se tira el Scaffolding
+
         echo $html->css('cake.generic')."\n";
         echo $html->css('flashhelper')."\n";
         echo $html->css('authake')."\n";
+
         //Project CSS
         echo $html->css('mcarrascal')."\n";
-        // CSS De Fabian
-		echo $scripts_for_layout;
+
+        // Jquery
+        echo $javascript->link('jquery/jquery-1.3.2.min.js')."\n";
+        echo $scripts_for_layout;
 	?>
 </head>
 <body>

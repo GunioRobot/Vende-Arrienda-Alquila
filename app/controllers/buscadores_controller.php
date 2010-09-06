@@ -7,7 +7,6 @@ class BuscadoresController extends AppController {
     var $name = 'Buscadores';
 
     function search() {
-        Configure::write('debug', 3);
         $this->loadModel('Inmuebl');
 
         $this->pageTitle = 'Resultados';

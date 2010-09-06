@@ -51,18 +51,16 @@ display:none;
     margin: 15px;
 }
 
-#jsddm {
-    margin: 0;
-    padding: 0
-}
-
-#jsddm li {   
-    float: left;
+#jsddm {   
+    padding-left:25em;
+    position:absolute;
+    z-index:3;
     list-style: none;
-    font: 12px Tahoma, Arial
+    font: 12px Tahoma, Arial;
+    visibility:hidden;
 }
 
-#jsddm li a {   
+#jsddm a {   
     display: block;
     background: #E8F8DE;
     padding: 5px 12px;
@@ -74,11 +72,11 @@ display:none;
     text-align:center;
 }
 
-#jsddm li a:hover {   
+#jsddm a:hover {   
     background: #749F59;
 }
 
-#jsddm li ul {   
+#jsddm ul {   
     margin: 0;
     padding: 0;
     position: absolute;
@@ -86,7 +84,7 @@ display:none;
     border-top: 1px solid white
 }
 
-#jsddm li ul li {
+#jsddm ul li {
     float: none;
     display: inline
 }
