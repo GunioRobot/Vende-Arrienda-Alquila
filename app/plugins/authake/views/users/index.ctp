@@ -1,8 +1,11 @@
+
 <div id="authake">
 <? if (!$tableonly) { echo $this->renderElement('gotoadminpage'); } ?>
 <div class="users index">
 <?php if (!$tableonly) { ?>
-<h2><?php __('Users');?></h2>
+    
+        <h1 class="caja-titulo"><?php __('Users');?></h1>
+    
 <div class="actions">
     <ul>
         <li class="icon add"><?php echo $html->link(__('New User', true), array('action'=>'add')); ?></li>

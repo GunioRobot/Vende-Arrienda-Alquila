@@ -12,7 +12,7 @@
 		echo $form->input('login', array('label'=>__('Username', true)));
 		echo $form->input('password', array('label'=>__('Password', true), 'size'=>'12'));
 		echo $form->input('email', array('label'=>__('Email', true), 'size'=>'40'));
-		echo $form->input('Group', array('label'=>__('In groups<br/>Press \'Control\' for multi-selection', true), 'style'=>'width: 15em;'));
+		echo $form->input('Group', array('label'=>__('In groups<br/>Press \'Control\' for multi-selection', true)));
         echo $form->label(__('Disable account', true));
         echo $form->checkbox('disable');
         

@@ -122,15 +122,20 @@ ul, li {
 */
 /* Tables */
 table {
-	background: #fff;
-	color: #333;
-	margin-bottom: 10px;
-	margin-top:20px;
+        border: 1px solid #cccccc;
+	clear:both;
+        color:#333333;
+        text-align: right;
         width: 100%;
 }
 th {
-	background: #f2f2f2;
-	text-align: center;
+	border-color: #cccccc;
+	text-align: left;
+        padding:0.2em;
+        border-width: medium medium 1px;
+        border-style: none none solid;
+        font-weight:bold;
+        background-color: #f2f2f2;
 }
 th a {
 	background:#f2f2f2;
@@ -144,9 +149,16 @@ th a:hover {
 	text-decoration: none;
 }
 table tr td {
-	border: 1px solid #ccc;
-	padding: 4px;
-	text-align: center;
+        background: #f9f9f9;
+        border-color:#dddddd;
+        border-style: none none solid;
+        border-width: medium medium 1px;
+        padding: 0.2em 0.6em;
+        text-align: left;
+        vertical-align: top;
+}
+table tr.altrow td {
+	background: #ffffff;
 }
 td.actions {
 	text-align: center;
@@ -231,8 +243,7 @@ fieldset fieldset div {
 }
 form div {
 	clear: both;
-	margin-bottom: 1em;
-	padding: .5em;
+	margin: 1em 0;
 	vertical-align: text-top;
 }
 form div.input {
@@ -257,8 +268,7 @@ input, textarea {
 	clear: both;
 	font-size: 140%;
 	font-family: "frutiger linotype", "lucida grande", "verdana", sans-serif;
-	padding: 2px;
-	width: 100%;
+	width:100%;
 }
 select {
 	clear: both;
@@ -361,3 +371,4 @@ div.related {
 	clear: both;
 	display: block;
 }
+

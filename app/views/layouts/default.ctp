@@ -47,6 +47,8 @@
         // Jquery
         echo $javascript->link('jquery/jquery-1.3.2.min.js')."\n";
         echo $scripts_for_layout;
+        echo $javascript->link('http://cdn.jquerytools.org/1.2.4/full/jquery.tools.min.js')."\n";
+        echo $scripts_for_layout;
 	?>
 </head>
 <body>

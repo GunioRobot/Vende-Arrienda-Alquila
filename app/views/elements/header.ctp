@@ -45,12 +45,12 @@ if ($authak3->isMemberOf(1)) {
     <div class="header-logo-alquila"></div>
     <div class="header-logo-arrienda"></div>
   </div>
-  <div class="header-envoltura-menu-top">
+  <div id="linea-verde">
       <ul class="menu-top">
-          <li class="item-menu-top"><a href="#"><span>Nosotros</span></a></li>
+          <li class="item-menu-top inicial"><a href="#"><span>Nosotros</span></a></li>
           <li class="item-menu-top"><a href="#"><span>Contactenos</span></a></li>
           <li class="item-menu-top"><a href="#"><span>Tarifas</span></a></li>
-          <?php echo $html->tag('li', $html->link('Registrarse', '/authake/user/register'), array('class' => 'item-menu-top')); ?>
+          <?php echo $html->tag('li', $html->link('Registrarse', '/authake/user/register'), array('class' => 'item-menu-top final')); ?>
       </ul>
   </div>
   <div class="barra-header"></div>

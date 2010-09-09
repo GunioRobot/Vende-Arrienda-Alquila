@@ -33,67 +33,92 @@ float:right;
     padding-left:20px;
 }
 .header-logo{
-    height:80px;
+    height:110px;
     padding-top:15px;
 }
 .header-logo-vende{
     background: transparent url(../img/Vende_net.png) no-repeat top left;
     width:191px;
-    height:80px;
+    height:50px;
     float:left;
 }
 .header-logo-alquila{
     background: transparent url(../img/Alquila_net.png) no-repeat top left;
     width:228px;
-    height:80px;
+    height:50px;
     float:left;
     margin:0 50px 0 50px;
 }
 .header-logo-arrienda{
     background: transparent url(../img/Arrienda_net.png) no-repeat top left;
     width:257px;
-    height:80px;
+    height:50px;
     float:left;
 }
-.header-envoltura-menu-top{
-        float:right;
+#linea-verde{
         position: relative;
         z-index: 1;
-        top:15px;
+        border-top:#4AAE30 2px solid;
+        border-bottom: #b8dfae 1px solid;
+}
+
+#linea-verde ul {
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border:#bfbebf 2px solid;
+    background: transparent url(../img/bg-menu-top.png) repeat-x top left;
+    height: 53px;
+    float:left;
 }
 .menu-top{
+    position: absolute;
     text-transform: uppercase;
     font-weight: bold;
-    line-height: 3px;
+    top: -30px;
+    left:170px;
 }
 .menu-top a{
    color:#000000;
 }
+
+.inicial a {
+    -moz-border-radius-topleft:6px;
+    -moz-border-radius-bottomleft: 6px;
+    -webkit-border-radius-topleft: 6px;
+    -webkit-border-radius-bottomleft: 6px;
+}
+
+.final a {
+    -moz-border-radius-topright:6px;
+    -moz-border-radius-bottomright: 6px;
+    -webkit-border-radius-topright: 6px;
+    -webkit-border-radius-bottomright: 6px;
+}
 .item-menu-top {
+    border-left:1px #bfbebf solid;
     float: left;
-    list-style:none;
-    height:24px;
-    width: 130px;
+    list-style-type: none;
+    height:53px;
     text-align: center;
+    
+}
+.inicial {
+    border-left:none;
+}
+
+.item-menu-top a{
+    display:block;
+    padding: 17px 25px;
 }
 
 .item-menu-top a:hover {
+      
     float:left;
-    position:relative;
-    top:-12px;
-    padding-top: 15px;
-    vertical-align: middle;
-    background:transparent url(../img/bg-menu-top-item-hover.png) no-repeat top left  ;
-    width: 130px;
-    height: 20px;
-
+    background-color: #ffffff;
 }
+
 .barra-header{
-    background: transparent url(../img/bg-menu-top.png) repeat-x top left;
-    position: relative;
-    width:950px;
-    height: 36px;
-    z-index: 0;
+
 }
 a {
     text-decoration: none;
@@ -107,7 +132,7 @@ a img {
 .contenido-envoltura{
 float:left;
 width:950px;
-margin-top:10px;
+margin-top:30px;
 }
 .contenido-left{
     float:left;
@@ -255,7 +280,8 @@ color:#4AAE30;
 }
 /*publicar inmueble estilos*/
 .seleccion-caja{
-    margin:30px 10px 10px 10px;
+    clear:both;
+    margin: 10px;
 }
 .campotexto{
     margin:10px 0 5px 0;
@@ -307,8 +333,24 @@ legend{
     float:right;
 }
 /* Tabla */
+/* vista ver inmueble */
+.tabla-detalles{
+     float:left;
+     margin: 10px 0;
+}
+.ver-imagenes {
+    -moz-border-radius:6px;
+    -webkit-border-radius: 6px;
+    border: 1px solid #cccccc;
+    float:right;
+    width: 470px;
+    margin:10px 0;
+    height: 296px;
+
+}
+
 #tabla-envoltura{
-    margin: 0 auto;
+    margin-top:20px;
     padding: 15px;
 }
 #tabla{

@@ -10,7 +10,7 @@
         <legend><?php __('Create a new group');?></legend>   
 	<?php
 		echo $form->input('name', array('label'=>__('Name', true)));
-        echo $form->input('User', array('label'=>__('Users in this group<br/>Press \'Control\' for multi-selection', true), 'style'=>'width: 15em;'));
+        echo $form->input('User', array('label'=>__('Users in this group<br/>Press \'Control\' for multi-selection', true)));
 	?>
 	</fieldset>
 <?php echo $form->end(__('Create', true));?>

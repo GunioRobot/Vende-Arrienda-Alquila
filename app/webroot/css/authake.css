@@ -1,6 +1,6 @@
 
 #authake  {
-margin-bottom:90px;
+margin:30px 0;
 }
 ul{
 
@@ -10,7 +10,7 @@ ul{
 
 /* Text styles */
 
-div#authake h1, div#authake h2, div#authake h3, div#authake h4, div#authake legend {
+div#authake h2, div#authake h3, div#authake h4, div#authake legend {
     color: #069;
     font-weight: bold;
    
@@ -35,7 +35,6 @@ div#authake h4 {
 
 
 
-
 /* Forms */
 
 div#authake .campotexto{
@@ -51,35 +50,35 @@ div#authake fieldset {
     -moz-border-radius:6px;
     -webkit-border-radius:6px;
     border:#4aae30 solid 1px;
-    width:385px;
+    width:400px;
     padding: 10px;
+    margin: 0;
 }
 
 div#authake label {
     float: left;
-    width: 15em;
     font-weight: bold;
 }
 
 div#authake input, div#authake select, div#authake textarea {
     display: inline;
-    width: auto;
-    padding: 0;
     border: 1px solid #ccc;
 }
 
 
 
 div#authake input, div#authake textarea {
-    padding: 0 0.3em;
+    
 }
 
 div#authake select, div#authake textarea {
     padding-right: 0;
+    width:100%
 }
 
 div#authake option {
     margin: 0.2em auto;
+    font-size: 100%;
 }
 
 div#authake textarea:focus, div#authake input:focus {
@@ -151,8 +150,6 @@ div#authake div.actions>ul>li>a:hover {
 div#authake li.icon {
     list-style-type: none;
     background-repeat: no-repeat;
-
-
 }
 
 div#authake li.info {
@@ -249,16 +246,13 @@ div#authake li. {
 
 /* Tables listing */
 div#authake table.listing {
-    background-color: #fff;
-    border: none;
+    border: #cccccc 1px solid;
     clear: both;
     color: #333;
-    margin: 1em 0 2em 12px;
     width: 100%;
     text-align: left;
 }
 div#authake table.listing th {
-    background: #f9f9f9;
     border: none;
     border-bottom: 1px solid #ccc;
     text-align: left;
@@ -268,7 +262,8 @@ div#authake table.listing th {
 div#authake table.listing th a {
     display: block;
     text-decoration: none;
-    font-weight: bold;    
+    font-weight: bold;
+    color: #333333;
 }
 div#authake table.listing th a:hover {
     background-color: inherit;
@@ -354,5 +349,22 @@ div#authake dd {
 /* Small menu in header */
 div#authake div.menuheader {
     float: right;
-    margin: 0;
+    margin: 11px 0 0 0;
+
 }
+/*Tabs administrador */
+
+.tabs-admin {
+    margin: 10px;
+    float: left;
+    width:100%;
+}
+.tabs-admin ul {
+    display: inline;
+}
+.tabs-admin li {
+    float: left;
+    list-style-type: none;
+    margin: 0 20px 0 0;
+}
+

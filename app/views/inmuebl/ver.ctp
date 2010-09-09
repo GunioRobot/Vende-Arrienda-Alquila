@@ -11,67 +11,66 @@
             <?php echo $inmueble['Inmuebl']['codigo']; ?>
         </h2>
     </div>
-    <div class="envoltura-caja" style="float:right; width: 420px; margin:20px 25px 0 0; height: 430px;">IMAGENES</div>
-<div class="tabla-envoltura" style="width:450px; margin: 0 10px 10px 25px;">
-        <table class="tabla" style="width:450px; ">
-        <tr class="body-tabla">
-            <td  class="header-tabla" colspan="4">
-          <p>Ubicación 
-          del Inmueble</td>
+    <div class="seleccion-caja">
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+            <th  colspan="4">
+          <p>Ubicación del Inmueble</p>
+            </th>
         </tr>
-        <tr class="body-tabla" style="text-align:center;">
-          <td>
+        <tr>
+          <th>
           <p><?php echo $inmueble['Zona']['Ciudad']['Departamento']['Pais']['nombre']; ?></p>
-          </td>
-          <td>
+          </th>
+          <th>
           <p><?php echo $inmueble['Zona']['Ciudad']['Departamento']['nombre'];?></p>
-          </td>
-          <td>
-
+          </th>
+          <th>
           <p><?php echo $inmueble['Zona']['Ciudad']['nombre']?></p>
-          </td>
-          <td>
+          </th>
+          <th>
           <?php echo $inmueble['Zona']['nombre']; ?>
-
-          </td>
+          </th>
         </tr>
       </table>
-  
-      </div>
-      
-<div class="tabla-envoltura" style="width:450px; margin: 0 10px 10px 25px;">
-    <table class="tabla" style="width:450px;">
-    <tr class="header-tabla">
-      <td colspan="2">
+    <div class =" ver-imagenes">
+        imagen
+    </div>
+
+
+    <div class="tabla-detalles">
+
+    <table cellspacing="0" cellpadding="0" style="width:450px;">
+    <tr>
+      <th colspan="2">
       <p>
-          Detalles
-      </td>
+          Detalles </p>
+      </th>
     </tr>
-    <tr class="body-tabla">
-     <td colspan="2">
+    <tr>
+     <th colspan="2">
       Código VENDE.NET:<?php echo $inmueble['Inmuebl']['codigo']; ?>
-     </td>
+     </th>
     </tr>
-    <tr class="body-tabla">
-      <td> Tipo de inmueble</td>
+    <tr>
+      <th> Tipo de inmueble</th>
       <td><?php echo $inmueble['Subcategoria']['nombre'].' ('.$inmueble['Subcategoria']['Categoria']['nombre'].')'; ?>
       <?php $esNuevo = ($inmueble['Inmuebl']['nuevo']) ? 'Nuevo':'Usado' ; echo $esNuevo; ?></td>
     </tr>
-    <tr class="body-tabla">
-      <td> Dirección</td>
+    <tr>
+      <th> Dirección</th>
       <td> <?php echo $inmueble['Inmuebl']['direccion']; ?></td>
     </tr>
 
-    <tr class="body-tabla">
-      <td> Barrio</td>
+    <tr>
+      <th> Barrio</th>
       <td><?php echo $inmueble['Inmuebl']['barrio']; ?></td>
     </tr>
-    <tr class="body-tabla">
-      <td>
-      <p>Alcobas</td>
-
-      <td>
-      <?php echo $inmueble['Inmuebl']['habitaciones']?></td>
+    <tr>
+      <th>
+      Alcobas
+      </th>
+      <td><?php echo $inmueble['Inmuebl']['habitaciones']?></td>
     </tr>
     <!-- Agregar el Dato del Area al modelo de Inmueble
     <tr class="body-tabla">
@@ -83,15 +82,15 @@
       110 m2</td>
     </tr>
     -->
-    <tr class="body-tabla">
-      <td>
-      Estrato</td>
+    <tr>
+      <th>
+      Estrato</th>
       <td><?php echo $estratos[$inmueble['Inmuebl']['estrato']]; ?></td>
 
     </tr>
-    <tr class="body-tabla">
-      <td>
-      Valor Venta</td>
+    <tr>
+      <th>
+      Valor Venta</th>
       <td>
       <?php echo $inmueble['Zona']['Ciudad']['Departamento']['Pais']['Moneda']['simbolo'].$inmueble['Inmuebl']['valor_venta']; ?>
 	</td>
@@ -106,21 +105,21 @@
       Si</td>
     </tr>
     -->
-    <tr class="body-tabla">
-      <td>
-      Administración</td>
+    <tr>
+      <th>
+      Administración</th>
       <td><?php echo $inmueble['Zona']['Ciudad']['Departamento']['Pais']['Moneda']['simbolo'].$inmueble['Inmuebl']['admon_venta']; ?>
     </tr>
-    <tr class="body-tabla">
-      <td>
-      Otros costos</td>
+    <tr>
+      <th>
+      Otros costos</th>
       <td>
       <?php echo $inmueble['Zona']['Ciudad']['Departamento']['Pais']['Moneda']['simbolo'].$inmueble['Inmuebl']['otros_venta']; ?>
       </td>
     </tr>
     </table>
-    
-  </div>
+   </div>
+
 
     
 
@@ -160,33 +159,33 @@
   </tr>
 </table> -->
 
-  <div class="tabla-envoltura" style="width:900px; margin-left:25px;">
-      <table class="tabla" style="width:900px;">
-    <tr class="header-tabla">
-      <td colspan="4">
+
+      <table cellpadding="0" cellspacing="0">
+    <tr>
+      <th colspan="4">
       <a name="Otros Detalles del Inmueble">Otros Detalles del Inmueble</a>
-      </td>
+      </th>
     </tr>
-    <tr class="body-tabla">
-      <td>Telefono</td>
+    <tr>
+      <th>Telefono</th>
       <td> <?php echo ($inmueble['Inmuebl']['telefono']) ? 'Tiene' : 'No Tiene'; ?></td>
-      <td>
-      Baños</td>
+      <th>
+      Baños</th>
       <td <?php echo $inmueble['Inmuebl']['banos']; ?></td>
 
     </tr>
-    <tr class="body-tabla">
-      <td>Parqueaderos</td>
+    <tr>
+      <th>Parqueaderos</th>
       <td><?php echo $inmueble['Inmuebl']['parqueaderos']; ?></td>
-      <td>Amoblado</td>
+      <th>Amoblado</th>
 
       <td><?php echo ($inmueble['Inmuebl']['amoblado']) ? 'Si' : 'No'; ?></td>
     </tr>
-    <tr class="body-tabla">
-      <td> Estudio</td>
+    <tr>
+      <th> Estudio</th>
       <td><?php echo ($inmueble['Inmuebl']['estudio']) ? 'Si' : 'No'; ?></td>
 
-      <td>Closets--</td>
+      <th>Closets--</th>
       <td>0--</td>
     </tr>
     <!--
@@ -214,114 +213,113 @@
       No</td>
     </tr>
     -->
-    <tr class="body-tabla">
-      <td>Chimenea cuarto principal</td>
+    <tr>
+      <th>Chimenea cuarto principal</th>
       <td>No</td>
 
-      <td>
-      Chimenea Sala / comedor</td>
+      <th>
+      Chimenea Sala / comedor</th>
       <td>
       No</td>
     </tr>
-    <tr class="body-tabla">
-      <td>
-      Detalles Internos</td>
+    <tr>
+      <th>
+      Detalles Internos</th>
     </tr>
-    <tr class="body-tabla">
+    <tr>
       <td>
       <?php echo ($inmueble['Inmuebl']['cintegral']) ? 'Si' : 'No'; ?></td>
-      <td>Cuarto 
-      servicio </td>
+      <th>Cuarto
+      servicio </th>
       <td>
       <?php echo ($inmueble['Inmuebl']['cempleada']) ? 'Si' : 'No'; ?></td>
     </tr>
-    <tr class="body-tabla">
-      <td>Zona Ropas</td>
-
+    <tr>
+      <th>Zona Ropas</th>
       <td>
       <?php echo ($inmueble['Inmuebl']['zropas']) ? 'Si' : 'No'; ?></td>
-      <td>Patio</td>
+      <th>Patio</th>
       <td>Si--</td>
     </tr>
-    <tr class="body-tabla">
-      <td>Deposito</td>
+    <tr>
+      <th>Deposito</th>
       <td><?php echo ($inmueble['Inmuebl']['deposito']) ? 'Si' : 'No'; ?></td>
-      <td>Aire acondicionado</td>
+      <th>Aire acondicionado</th>
       <td><?php echo ($inmueble['Inmuebl']['aacondicionado']) ? 'Si' : 'No'; ?></td>
     </tr>
 
-    <tr class="body-tabla">
-      <td>Gas</td>
+    <tr>
+      <th>Gas</th>
       <td><?php echo ($inmueble['Inmuebl']['gas']) ? 'Si' : 'No'; ?></td>
-      <td>Calentador</td>
+      <th>Calentador</th>
       <td><?php echo $calentador[$inmueble['Inmuebl']['calentador_id']]; ?></td>
 
     </tr>
-    <tr class="body-tabla">
-      <td>Calefacción</td>
+    <tr>
+      <th>Calefacción</th>
       <td><?php echo ($inmueble['Inmuebl']['calefaccion']) ? 'Si' : 'No'; ?></td>
-      <td>Tipo de Garaje---</td>
+      <th>Tipo de Garaje---</th>
       <td>Independiente---</td>
     </tr>
-    <tr class="body-tabla">
-      <td colspan="4">
-      Otras características</td>
+    <tr>
+      <th colspan="4">
+      Otras características</th>
     </tr>
-    <tr class="body-tabla">
-      <td colspan="4">
+    <tr>
+      <th colspan="4">
       <a name="Detalles del conjunto">
-      Detalles del conjunto</a></td>
+      Detalles del conjunto</a></th>
     </tr>
 
-    <tr class="body-tabla">
-      <td>Conjunto cerrado</td>
+    <tr>
+      <th>Conjunto cerrado</th>
       <td><?php echo ($inmueble['Inmuebl']['conjunto']) ? 'Si' : 'No'; ?></td>
-      <td >Nombre 
-      del conjunto</td>
+      <th >Nombre
+      del conjunto</th>
       <td><?php echo $inmueble['Inmuebl']['nombre_conjunto']; ?></td>
 
     </tr>
-    <tr class="body-tabla">
-      <td >Salón 
-      Comunal</td>
+    <tr>
+      <th>Salón
+      Comunal</th>
       <td>Si--</td>
-      <td>
-      Parqueadero Visitantes</td>
+      <th>
+      Parqueadero Visitantes</th>
       <td>
       <?php echo ($inmueble['Inmuebl']['pvisitantes']) ? 'Si' : 'No'; ?></td>
       </tr>
-    <tr class="body-tabla">
-      <td>Zona de 
-      Niños</td>
+    <tr>
+      <th>Zona de
+      Niños</th>
       <td>
       No--</td>
-      <td >Garaje cubierto</td>
+      <th>Garaje cubierto</th>
 
       <td>
       No--</td>
       </tr>
-    <tr class="body-tabla">
-      <td >Piscina</td>
+    <tr>
+      <th>Piscina</th>
       <td>
       <?php echo ($inmueble['Inmuebl']['piscina']) ? 'Si' : 'No'; ?></td>
 
-      <td>Gimnasio</td>
+      <th>Gimnasio</th>
       <td>
       <?php echo ($inmueble['Inmuebl']['gimnasio']) ? 'Si' : 'No'; ?></td>
       </tr>
-    <tr class="body-tabla">
-      <td>Portería</td>
+    <tr>
+      <th>Portería</th>
       <td>
       <?php echo ($inmueble['Inmuebl']['porteria']) ? 'Si' : 'No'; ?></td>
-      <td>
-      Vigilancia</td>
+      <th>
+      Vigilancia</th>
 
       <td>
       <?php echo ($inmueble['Inmuebl']['vigilancia']) ? 'Si' : 'No'; ?></td>
       </tr>
   </table>
-    
-</div>
+    </div>
+
 
 
     </div>
