@@ -50,18 +50,18 @@ echo $form->input('subcategoria_id', array(
 <legend>Ubicaci&oacute;n</legend>
 <?php
 array_unshift($paises, '- Seleccione un Pais -');
-echo $form->input('pais', array('id' => 'pais', 'options' => $paises, 
+echo $form->input('pais_id', array('id' => 'pais', 'options' => $paises,
         'after' => $html->image('loader.gif', array('class' => 'loader loader-pais'))
     ));
 
-echo $form->input('Departamento', array(
+echo $form->input('departamento_id', array(
             'id' => 'dpto', 
             'div' => array('id' => 'input_dpto', 'style' => 'display:none'), 
             'after' => $html->image('loader.gif', array('class' => 'loader loader-dpto')),
             'options' => array('- Seleccione un Departamento -') 
             ));
 
-echo $form->input('Ciudad', array(
+echo $form->input('ciudad_id', array(
             'id' => 'ciudad', 
             'div' => array('id' => 'input_ciudad', 'style' => 'display:none'), 
             'after' => $html->image('loader.gif', array('class' => 'loader loader-ciudad')),
@@ -84,7 +84,7 @@ echo $form->input('direccion', array(
 
 ?>
 </fieldset>
-<fieldset style="width: 500px; min-height:65px; margin-left: 10px;">
+<fieldset style="width: 430px; min-height:65px; margin-left: 10px;">
 <legend>Adicional</legend>
 <div id="inmuebles">
 <?php
@@ -107,6 +107,9 @@ echo $form->input('modelo', array(
         'maxYear' => date('Y')));
 echo $form->input('marca');
 ?>
+</div>
+<div id="clima">
+<?php echo $form->input('clima_id', array('options' => $climas)); ?>
 </div>
 </fieldset>
 </div>

@@ -8,7 +8,7 @@ class Departamento extends AppModel {
     //var $useTable = 'dptos';
     var $displayField = 'nombre';
     var $belongsTo = 'Pais';
-    var $hasMany = 'Ciudad';
+    var $hasMany = array('Ciudad', 'Inmuebl');
     var $recursive = '2';
 }
 ?>

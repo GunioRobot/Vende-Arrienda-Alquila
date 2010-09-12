@@ -7,7 +7,7 @@ class Ciudad extends AppModel {
     var $name = 'Ciudad';
     var $displayField = 'nombre';
     var $belongsTo = 'Departamento';
-    var $hasMany = 'Zona';
+    var $hasMany = array('Zona', 'Inmuebl');
     var $recursive = '2';
 }
 ?>

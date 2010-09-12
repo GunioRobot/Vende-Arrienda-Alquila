@@ -30,6 +30,9 @@ class InmueblesController extends AppController {
         $this->loadModel('Pais');
         $this->set('paises', $this->Pais->find('list'));
 
+        $this->loadModel('Clima');
+        $this->set('climas', $this->Clima->find('list'));
+
         $estratos = array('', 'Bajo', 'Medio Bajo', 'Medio', 'Medio Alto', 'Alto', 'Mas Alto');
         $this->set('estratos', $estratos);
     }
@@ -43,7 +46,7 @@ class InmueblesController extends AppController {
         $this->Inmuebl->set('status_id', '1');
         $this->Inmuebl->set('active', '1');
         $this->loadModel('Pais');
-        $pais = $this->Pais->findById($this->data['Inmuebl']['pais']);
+        $pais = $this->Pais->findById($this->data['Inmuebl']['pais_id']);
         $this->Inmuebl->set('moneda', $pais['Moneda']['id']);
 
         // Le Asigno un codigo
@@ -114,6 +117,7 @@ class InmueblesController extends AppController {
 
             $calentadores = array('--Tipo--','GAS', 'ELECTRICO', 'SOLAR');
             $this->set('calentador', $calentadores);
+
         }
     }
 }

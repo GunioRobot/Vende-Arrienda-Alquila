@@ -12,6 +12,8 @@ if ($authak3->isLogged()) {
         $menuAdmin = $html->tag('li', $html->link('Administrar', '#').$html->tag('ul', 
             $html->tag('li', $html->link('Usuarios', '/authake')).
             $html->tag('li', $html->link('Estados', '/statuses')).
+            $html->tag('li', $html->link('Categorias', '/categorias')).
+            $html->tag('li', $html->link('Subcategorias', '/subcategorias')).
             $html->tag('li', $html->link('Monedas', '/monedas')).
             $html->tag('li', $html->link('Pais', '/paises')).
             $html->tag('li', $html->link('Departamento', '/departamentos')).
