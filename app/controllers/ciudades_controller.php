@@ -8,10 +8,14 @@ class CiudadesController extends AppController {
     var $scaffold;
 
     function getAll($id = null){
+        $this->loadModel('Inmuebl');
+        $ciudades_id = array_unique($this->Inmuebl->find('list', array(
+                'fields' => array('Inmuebl.ciudad_id')
+            )));
         $ciudades = $this->Ciudad->find('list', 
             array(
                 'fields' => array('id', 'nombre'),
-                'conditions' => array('departamento_id' => $id),
+                'conditions' => array('departamento_id' => $id, 'id' => $ciudades_id),
                 'order' => array('Ciudad.nombre ASC')
             ));
 

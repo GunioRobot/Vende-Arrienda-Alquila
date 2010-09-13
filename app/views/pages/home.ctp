@@ -23,7 +23,6 @@ echo $javascript->link('buscador')."\n";
           <div class="busqueda-detallada-bloque">
           <div class="negocio-titulo">Tipo de negocio</div>
           <select id="BuscadorSitio" class="opciones-tipo-negocio" name="data[Buscador][site_id]">
-            <option class="opcion-tipo-negocio" value="0">Elija Uno</option>
             <option class="opcion-tipo-negocio" value="1">Vender</option>
             <option class="opcion-tipo-negocio" value="2">Arrienda o Alquila</option>
             <option class="opcion-tipo-negocio" value="3">Alquila por Temporadas</option>

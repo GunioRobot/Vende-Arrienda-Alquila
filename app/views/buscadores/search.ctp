@@ -1,5 +1,4 @@
 <?php
-var_dump($results);
 //var_dump($paginado);
 ///echo $paginator->sort('ID', 'id');
 /**
@@ -10,6 +9,7 @@ echo $paginator->counter(array('separator' => ' de '));
  */
 ?>
 <hr>
+<?php if (!empty($results)) { ?>
 <table>
 <tr>
     <th>Titulo</th>
@@ -21,9 +21,11 @@ echo $paginator->counter(array('separator' => ' de '));
 <tr>
     <td><?php echo $html->link($r['Inmuebl']['titulo'], array('controller' => 'inmuebles', 'action' => 'ver/'.$r['Inmuebl']['id'])); ?></td>
     <td><?php echo $r['Subcategoria']['nombre']; ?></td>
-    <td><?php echo $r['Zona']['nombre'].', '.$r['Zona']['Ciudad']['nombre']; ?></td>
+    <td><?php echo $r['Zona']['nombre'].', '.$r['Ciudad']['nombre']; ?></td>
     <td><?php echo $r['Status']['nombre']; ?></td>
 </tr>
 <?php } ?>
 </table>
-
+<?php } else { ?>
+<h2>Lo sentimos, no hubo resultados</h2>
+<?php } ?>

@@ -20,13 +20,13 @@
         </tr>
         <tr>
           <th>
-          <p><?php echo $inmueble['Zona']['Ciudad']['Departamento']['Pais']['nombre']; ?></p>
+          <p><?php echo $inmueble['Pais']['nombre']; ?></p>
           </th>
           <th>
-          <p><?php echo $inmueble['Zona']['Ciudad']['Departamento']['nombre'];?></p>
+          <p><?php echo $inmueble['Departamento']['nombre'];?></p>
           </th>
           <th>
-          <p><?php echo $inmueble['Zona']['Ciudad']['nombre']?></p>
+          <p><?php echo $inmueble['Ciudad']['nombre']?></p>
           </th>
           <th>
           <?php echo $inmueble['Zona']['nombre']; ?>
@@ -54,7 +54,7 @@
     </tr>
     <tr>
       <th> Tipo de inmueble</th>
-      <td><?php echo $inmueble['Subcategoria']['nombre'].' ('.$inmueble['Subcategoria']['Categoria']['nombre'].')'; ?>
+      <td><?php echo $inmueble['Subcategoria']['nombre'].' ('.$inmueble['Categoria']['nombre'].')'; ?>
       <?php $esNuevo = ($inmueble['Inmuebl']['nuevo']) ? 'Nuevo':'Usado' ; echo $esNuevo; ?></td>
     </tr>
     <tr>
@@ -92,7 +92,7 @@
       <th>
       Valor Venta</th>
       <td>
-      <?php echo $inmueble['Zona']['Ciudad']['Departamento']['Pais']['Moneda']['simbolo'].$inmueble['Inmuebl']['valor_venta']; ?>
+      <?php echo $inmueble['Moneda']['simbolo'].$inmueble['Inmuebl']['valor_venta']; ?>
 	</td>
 
     </tr>
@@ -108,13 +108,13 @@
     <tr>
       <th>
       Administración</th>
-      <td><?php echo $inmueble['Zona']['Ciudad']['Departamento']['Pais']['Moneda']['simbolo'].$inmueble['Inmuebl']['admon_venta']; ?>
+      <td><?php echo $inmueble['Moneda']['simbolo'].$inmueble['Inmuebl']['admon_venta']; ?>
     </tr>
     <tr>
       <th>
       Otros costos</th>
       <td>
-      <?php echo $inmueble['Zona']['Ciudad']['Departamento']['Pais']['Moneda']['simbolo'].$inmueble['Inmuebl']['otros_venta']; ?>
+      <?php echo $inmueble['Moneda']['simbolo'].$inmueble['Inmuebl']['otros_venta']; ?>
       </td>
     </tr>
     </table>

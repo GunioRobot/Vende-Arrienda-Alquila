@@ -85,8 +85,13 @@ class PagesController extends AppController {
 
             // Pongo en la vista la lista de paises
             $this->loadModel('Pais');
+            $this->loadModel('Inmuebl');
+            $paises_id = array_unique($this->Inmuebl->find('list', array(
+                'fields' => array('Inmuebl.pais_id')
+            )));
             $this->set('paises', $this->Pais->find('list', array(
                         'fields' => array('Pais.id', 'Pais.nombre'),
+                        'conditions' => array('id' => $paises_id),
                         'order' => array('Pais.nombre ASC')
                     )));
 

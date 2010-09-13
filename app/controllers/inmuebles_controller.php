@@ -16,8 +16,9 @@ class InmueblesController extends AppController {
         $this->pageTitle = 'Mis Inmuebles';
 
         $inmuebles = $this->Inmuebl->find('all', array(
-                'fields' => array('id','codigo', 'status_id', 'titulo', 'subcategoria_id'),
-                'conditions' => array('active' => 1, 'user_id' => $this->Authake->getUserId())
+                'fields' => array('Inmuebl.id','Inmuebl.codigo', 'Status.nombre', 'Inmuebl.titulo', 'Subcategoria.nombre'),
+                'conditions' => array('Inmuebl.active' => 1, 'Inmuebl.user_id' => $this->Authake->getUserId()),
+                'recursive' => 0
         ));
 
         $this->set('inmuebles', $inmuebles);
@@ -104,10 +105,15 @@ class InmueblesController extends AppController {
 
 
     function ver($id = null) {
-        $this->loadModel('Zona');
-
+        $this->loadModel('Categoria');
+        $this->loadModel('Moneda');
         if ($id) {
-            $inmueble =  $this->Inmuebl->find('first',array('conditions' => array('Inmuebl.id' => $id)));                
+            $inmueble =  $this->Inmuebl->find('first',array(
+                    'conditions' => array('Inmuebl.id' => $id),
+                    'recursive' => 1
+                ));
+            $inmueble['Categoria'] = array_pop($this->Categoria->findById($inmueble['Subcategoria']['categoria_id']));
+            $inmueble['Moneda'] = array_pop($this->Moneda->findById($inmueble['Pais']['moneda_id']));
             //$pais = $this->Pais->findById($inmueble['Inmueble']['pais']);
             //$zona = $this->Zona->findById($inmueble['Inmueble']['zona_id']);
             $this->set('inmueble', $inmueble);
